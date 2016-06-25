@@ -1,0 +1,28 @@
+{
+  "items" : [
+    {
+      "label_name" : "60后",
+      "label_id" : 10071
+    },
+    {
+      "label_name" : "70后",
+      "label_id" : 10072
+    },
+    {
+      "label_name" : "80后",
+      "label_id" : 10073
+    },
+    {
+      "label_name" : "85后",
+      "label_id" : 10074
+    },
+    {
+      "label_name" : "90后",
+      "label_id" : 10075
+    },
+    {
+      "label_name" : "其它",
+      "label_id" : 10076
+    }
+  ]
+}

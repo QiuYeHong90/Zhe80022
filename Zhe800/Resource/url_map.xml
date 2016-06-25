@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <!-- http://m.zhe800.com/deal/detail?deal_id=234242&page_from= -->
+    <controller identifier="Tao800DealDetail@Tao800DealDetailWebVCL" windowKey="5" desc="商品详情">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/dealdetail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="zhe800" host="special_deal"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/zdetail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="zid" to="zid"/>
+            <param from="dealid" to="dealId"/>
+            <param from="deal_id" to="dealId"/>
+            <param from="page_from" to="pageFrom"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/c/web?url=234242 -->
+    <controller identifier="Tao800Topic" windowKey="4" desc="普通web">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/c/web"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/c/web"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url" to="url"/>
+            <param from="client_login" to="clientLogin"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/h5/web?url=234242 -->
+    <controller identifier="Tao800Topic" windowKey="17" desc="h5交互">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/h5/web"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/h5/web"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url" to="url"/>
+            <param from="client_login" to="clientLogin"/>
+            <param from="schemechannel" to="schemechannel"/>
+            <param from="message_id" to="messageId"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/deal/topic/detail?topic_id=234242 -->
+    <controller identifier="Tao800Topic" windowKey="12" desc="单栏专题">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/topic/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/topic/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="c_id" to="cId"/>
+            <param from="topic_id" to="topicId"/>
+            <param from="deal_from" to="pageFrom"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/topic/multiple?topic_id=234242 -->
+    <controller identifier="Tao800TopicSection" windowKey="15" desc="多栏专题">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/topic/multiple"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/topic/multiple"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="topic_id" to="topic_id"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/topic/saunter?topic_id=234242 -->
+    <controller identifier="Tao800SaunterTopic" windowKey="13" desc="值得逛专题">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/topic/saunter"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/topic/saunter"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="topic_id" to="topic_id"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/topic/lock?topic_id=234234 -->
+    <controller identifier="Tao800TopicLock" windowKey="14" desc="解锁专题">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/topic/lock"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/topic/lock"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="c_id" to="cId"/>
+            <param from="topic_id" to="topicId"/>
+            <param from="deal_from" to="pageFrom"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/saunter?c_id=&tag_id=&deal_from= -->
+    <controller identifier="Tao800Saunter@Tao800SaunterVCL" windowKey="18" desc="值得逛">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/saunter"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/saunter"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="c_id" to="cId"/>
+            <param from="tag_id" to="tagId"/>
+            <param from="deal_from" to="dealFrom"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/mobile/nearby -->
+    <controller identifier="Tao800Mobile" windowKey="19" desc="手机周边">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/mobile/nearby"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/mobile/nearby"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/forenotice -->
+    <controller identifier="Tao800Mobile" windowKey="20" desc="精选预告">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/forenotice"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/forenotice"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="page_refer" to="page_refer"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/checkin -->
+    <controller identifier="Tao800PersonalCheckInVCL" windowKey="21" desc="签到">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/checkin"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/checkin"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="page_refer" to="page_refer"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/dailyten?c_id=&deal_from=&page_refer= -->
+    <controller identifier="Tao800DailyTen@Tao800DailyTenVCL" windowKey="22" desc="每日十条">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/dailyten"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/dailyten"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="page_refer" to="page_refer"/>
+            <param from="deal_from" to="pageFrom"/>
+            <param from="c_id" to="cId"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/newly -->
+    <controller identifier="Tao800TodayV4" windowKey="23" desc="今日更新">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/newly"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/newly"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/lottery -->
+    <controller identifier="Lottery@Tao800LotteryScrollPageVCL" windowKey="24" desc="0元抽奖">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/lottery"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/lottery"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="lottery_id" to="lotteryId"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/promotion -->
+    <controller identifier="Tao800PromotionList@Tao800PromotionScrollPageVCL" windowKey="25" desc="大促预告">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/promotion"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/promotion"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="time_string" to="timeString"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/mall -->
+    <controller identifier="Tao800TagListToday" windowKey="50" desc="特卖商城">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/mall"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/mall"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/brand/detail?brand_id=234&deal_ids=23,324234,23423 -->
+    <controller identifier="Tao800BrandDealListState@Tao800BrandDealListStateVCL" windowKey="51" desc="品牌详情">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/brand/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/brand/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="brand_id" to="brandId"/>
+            <param from="deal_ids" to="dealids"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/campus -->
+    <controller identifier="Tao800Campus@Tao800CampusVCL" windowKey="52" desc="校园专区">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/campus"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/campus"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/search?keyword=ss -->
+    <controller identifier="Tao800SearchVCL" windowKey="53" desc="搜索">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/search"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/search"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="keyword" to="keyword"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/vfr -->
+    <controller identifier="Tao800VFittingRoomVCL" windowKey="54" desc="虚拟试衣间">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/vfr"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/vfr"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/tag/list?tag_name=女装&tag_url=nvzhuang&tag_parent_url= -->
+    <controller identifier="Tao800TagList" windowKey="55" desc="分类列表">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/tag/list"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/tag/list"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="deal_from" to="pageFrom"/>
+            <param from="c_id" to="bannerid"/>
+            <param from="tag_name" to="tag_name"/>
+            <param from="tag_url" to="tag_url"/>
+            <param from="tag_parent_url" to="tag_parent_url"/>
+            <param from="url_name" to="tag_url"/>
+            <param from="cat_name" to="tag_name"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/mobile/recharge -->
+    <controller identifier="Tao800MobileRecharge@Tao800MobileRechargeVCL" windowKey="56" desc="充值">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/mobile/recharge"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/mobile/recharge"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/wish?c_id=&page_from=1 -->
+    <controller identifier="Tao800HeartWish@Tao800HeartWishListVCL" windowKey="57" desc="心愿单">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/wish"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/wish"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="c_id" to="cId"/>
+            <param from="page_from" to="pageFrom"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/remind  -->
+    <controller identifier="Tao800PersonalRemind@Tao800PersonalRemindVCL" windowKey="58" desc="开卖提醒">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/remind"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/remind"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- http://m.zhe800.com/deal/favorites  -->
+    <controller identifier="Tao800FavoriteScrollPageVCL@Tao800FavoriteScrollPageVCL" windowKey="59" desc="我的收藏">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/favorites"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/favorites"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <controller identifier="Tao800FavoriteScrollPageVCL@Tao800FavoriteScrollPageVCL" windowKey="59" desc="我的收藏">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/cn/favorate_brands"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+            <param from="type" to="type"/>
+        </params-map>
+    </controller>
+    
+    <!-- http://m.zhe800.com/point/auction/detail?url_name=  -->
+    <controller identifier="Tao800PersonalRemind@Tao800PersonalRemindVCL" windowKey="60" desc="竞拍商品详情">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/point/auction/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/point/auction/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url_name" to="urlName"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- http://m.zhe800.com/deal/muying?url_name=  -->
+    <controller identifier="Tao800PersonalRemind@Tao800PersonalRemindVCL" windowKey="61" desc="母婴列表页面">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/muying"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/deal/muying"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url_name" to="urlName"/>
+            <param from="deal_from" to="pageFrom"/>
+            <param from="c_id" to="bannerid"/>
+            <param from="cat_name" to="catName"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/deal/imcenter  -->
+    <controller identifier="Tao800PersonalRemind@Tao800PersonalRemindVCL" windowKey="63" desc="消息中心">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/deal/imcenter"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/account/mcenter"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+            <param from="client_login" to="clientLogin"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/push/remind_web?url=234242 -->
+    <controller identifier="Tao800Topic" windowKey="4" desc="多次退出后唤醒客户端的web分享提示">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/push/remind_web"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/push/remind_web"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url" to="url"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/mid/personal/mscenter/dead -->
+    <controller identifier="Tao800MessageCenterDeadlineRemind" windowKey="64" desc="个人中心我的消息到期提醒">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/personal/mscenter/dead"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/goto_home -->
+    <controller identifier="Tao800GotoHome" windowKey="26" desc="跳转到首页">
+        <intent-filter>
+            <url scheme="http" host="goto_home" path=""/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/mid/home" -->
+    <controller identifier="" windowKey="65" desc="品牌团首页">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/home"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="tab" to="tab"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--    http://m.zhe800.com/mid/rt?url=" -->
+    <controller identifier="" windowKey="1001" desc="">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/rt"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url" to="url"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--   zhe800://m.zhe800.com/mid/post8 -->
+    <controller identifier="" windowKey="66" desc="">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/post8"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!--   zhe800://m.zhe800.com/mid/account/history -->
+    <controller identifier="Tao800BrowseHistoryVCL" windowKey="68" desc="个人中心足迹">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/account/history"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- http://m.zhe800.com/mid/point?index=  -->
+    <controller identifier="Tao800PointListScrollPageVCL@Tao800PointListScrollPageVCL" windowKey="67" desc="积分商城首页">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/point"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="index" to="pageKey"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- zhe800://m.zhe800.com/mid/account/address -->
+    <controller identifier="" windowKey="69" desc="收货地址">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/account/address"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- zhe800://m.zhe800.com/mid/account/point -->
+    <controller identifier="" windowKey="70" desc="我的积分">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/account/point"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- zhe800://m.zhe800.com/mid/account/modifypwd -->
+    <controller identifier="" windowKey="71" desc="修改密码">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/account/modifypwd"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- zhe800://m.zhe800.com/mid/account/modifyphone -->
+    <controller identifier="" windowKey="72" desc="修改手机号">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/account/modifyphone"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    <!-- http://m.zhe800.com/mid/point/welfare/detail?url_name=  -->
+    <controller identifier="Tao800PersonalRemind@Tao800PersonalRemindVCL" windowKey="73" desc="0元兑商品详情">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/point/welfare/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url_name" to="urlName"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- http://m.zhe800.com/mid/point/score_cash/detail?deal_id= -->
+    <controller identifier="Tao800PersonalRemind@Tao800PersonalRemindVCL" windowKey="74" desc="现金购商品详情">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/point/score_cash/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="deal_id" to="dealId"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- http://m.zhe800.com/mid/point/raffle/detail?url_name=  -->
+    <controller identifier="Tao800PersonalRemind@Tao800PersonalRemindVCL" windowKey="75" desc="积分抽奖商品详情">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/point/raffle/detail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="url_name" to="urlName"/>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+    
+    <!-- zhe800://m.zhe800.com/mid/im/leavemsg -->
+    <controller identifier="" windowKey="76" desc="客服留言">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/im/leavemsg"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="schemechannel" to="schemechannel"/>
+        </params-map>
+    </controller>
+</manifest>

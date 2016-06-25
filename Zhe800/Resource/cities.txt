@@ -1,0 +1,2387 @@
+{
+  "cities": [
+    {
+      "longitude": 102.224776,
+      "latitude": 31.899363,
+      "pinyin": "abazhou",
+      "name": "\u963f\u575d\u5dde",
+      "id": "2078"
+    },
+    {
+      "longitude": 110.32851,
+      "latitude": 19.697207,
+      "pinyin": "andingxian",
+      "name": "\u5b9a\u5b89\u53bf",
+      "id": "2179"
+    },
+    {
+      "longitude": 117.056857,
+      "latitude": 30.524895,
+      "pinyin": "anqing",
+      "name": "\u5b89\u5e86",
+      "id": "68"
+    },
+    {
+      "longitude": 122.994646,
+      "latitude": 41.108546,
+      "pinyin": "anshan",
+      "name": "\u978d\u5c71",
+      "id": "255"
+    },
+    {
+      "longitude": 105.947594,
+      "latitude": 26.253072,
+      "pinyin": "anshun",
+      "name": "\u5b89\u987a",
+      "id": "304"
+    },
+    {
+      "longitude": 114.392756,
+      "latitude": 36.097593,
+      "pinyin": "anyang",
+      "name": "\u5b89\u9633",
+      "id": "69"
+    },
+    {
+      "longitude": 113.543873,
+      "latitude": 22.198745,
+      "pinyin": "aomen",
+      "name": "\u6fb3\u95e8",
+      "id": "35"
+    },
+    {
+      "longitude": 122.839024,
+      "latitude": 45.619641,
+      "pinyin": "baicheng",
+      "name": "\u767d\u57ce",
+      "id": "375"
+    },
+    {
+      "longitude": 106.618141,
+      "latitude": 23.902243,
+      "pinyin": "baise",
+      "name": "\u767e\u8272",
+      "id": "2107"
+    },
+    {
+      "longitude": 126.423587,
+      "latitude": 41.939994,
+      "pinyin": "baishan",
+      "name": "\u767d\u5c71",
+      "id": "369"
+    },
+    {
+      "longitude": 109.451495,
+      "latitude": 19.224872,
+      "pinyin": "baishaxian",
+      "name": "\u767d\u6c99\u53bf",
+      "id": "2175"
+    },
+    {
+      "longitude": 115.46463,
+      "latitude": 38.873972,
+      "pinyin": "baoding",
+      "name": "\u4fdd\u5b9a",
+      "id": "248"
+    },
+    {
+      "longitude": 107.1339,
+      "latitude": 34.372436,
+      "pinyin": "baoji",
+      "name": "\u5b9d\u9e21",
+      "id": "422"
+    },
+    {
+      "longitude": 99.161482,
+      "latitude": 25.112036,
+      "pinyin": "baoshan",
+      "name": "\u4fdd\u5c71",
+      "id": "2060"
+    },
+    {
+      "longitude": 109.70259,
+      "latitude": 18.63912,
+      "pinyin": "baotingxian",
+      "name": "\u4fdd\u4ead\u53bf",
+      "id": "2178"
+    },
+    {
+      "longitude": 109.840386,
+      "latitude": 40.657447,
+      "pinyin": "baotou",
+      "name": "\u5305\u5934",
+      "id": "246"
+    },
+    {
+      "longitude": 107.387646,
+      "latitude": 40.743221,
+      "pinyin": "bayannaoer",
+      "name": "\u5df4\u5f66\u6dd6\u5c14",
+      "id": "2132"
+    },
+    {
+      "longitude": 109.119899,
+      "latitude": 21.481217,
+      "pinyin": "beihai",
+      "name": "\u5317\u6d77",
+      "id": "310"
+    },
+    {
+      "longitude": 116.394997,
+      "latitude": 39.925487,
+      "pinyin": "beijing",
+      "name": "\u5317\u4eac",
+      "flag":1,
+      "id": "1"
+
+    },
+    {
+      "longitude": 117.389719,
+      "latitude": 32.916287,
+      "pinyin": "bengbu",
+      "name": "\u868c\u57e0",
+      "id": "249"
+    },
+    {
+      "longitude": 123.766485,
+      "latitude": 41.294176,
+      "pinyin": "benxi",
+      "name": "\u672c\u6eaa",
+      "id": "389"
+    },
+    {
+      "longitude": 117.970698,
+      "latitude": 37.381866,
+      "pinyin": "binzhou",
+      "name": "\u6ee8\u5dde",
+      "id": "2138"
+    },
+    {
+      "longitude": 115.778676,
+      "latitude": 33.844582,
+      "pinyin": "bozhou",
+      "name": "\u4eb3\u5dde",
+      "id": "277"
+    },
+    {
+      "longitude": 116.83884,
+      "latitude": 38.304449,
+      "pinyin": "cangzhou",
+      "name": "\u6ca7\u5dde",
+      "id": "321"
+    },
+    {
+      "longitude": 109.054126,
+      "latitude": 19.260278,
+      "pinyin": "chagnjiangxian",
+      "name": "\u660c\u6c5f\u53bf",
+      "id": "2176"
+    },
+    {
+      "longitude": 125.323542,
+      "latitude": 43.817084,
+      "pinyin": "changchun",
+      "name": "\u957f\u6625",
+      "id": "21"
+    },
+    {
+      "longitude": 111.698497,
+      "latitude": 29.031673,
+      "pinyin": "changde",
+      "name": "\u5e38\u5fb7",
+      "id": "323"
+    },
+    {
+      "longitude": 112.938814,
+      "latitude": 28.228209,
+      "pinyin": "changsha",
+      "name": "\u957f\u6c99",
+      "id": "19"
+    },
+    {
+      "longitude": 120.752507,
+      "latitude": 31.653584,
+      "pinyin": "changshu",
+      "name": "\u5e38\u719f",
+      "id": "361"
+    },
+    {
+      "longitude": 113.116255,
+      "latitude": 36.195386,
+      "pinyin": "changzhi",
+      "name": "\u957f\u6cbb",
+      "id": "396"
+    },
+    {
+      "longitude": 119.974454,
+      "latitude": 31.810077,
+      "pinyin": "changzhou",
+      "name": "\u5e38\u5dde",
+      "id": "16"
+    },
+    {
+      "longitude": 117.864722,
+      "latitude": 31.597853,
+      "pinyin": "chaohu",
+      "name": "\u5de2\u6e56",
+      "id": "279"
+    },
+    {
+      "longitude": 116.622597,
+      "latitude": 23.656972,
+      "pinyin": "chaozhou",
+      "name": "\u6f6e\u5dde",
+      "id": "289"
+    },
+    {
+      "longitude": 117.943621,
+      "latitude": 40.978744,
+      "pinyin": "chengde",
+      "name": "\u627f\u5fb7",
+      "id": "314"
+    },
+    {
+      "longitude": 104.064856,
+      "latitude": 30.658601,
+      "pinyin": "chengdu",
+      "name": "\u6210\u90fd",
+      "flag":1,
+      "id": "13"
+    },
+    {
+      "longitude": 110.006798,
+      "latitude": 19.738521,
+      "pinyin": "chengmaixian",
+      "name": "\u6f84\u8fc8\u53bf",
+      "id": "2177"
+    },
+    {
+      "longitude": 113.014718,
+      "latitude": 25.77051,
+      "pinyin": "chenzhou",
+      "name": "\u90f4\u5dde",
+      "id": "325"
+    },
+    {
+      "longitude": 118.886856,
+      "latitude": 42.257817,
+      "pinyin": "chifeng",
+      "name": "\u8d64\u5cf0",
+      "id": "392"
+    },
+    {
+      "longitude": 105.697472,
+      "latitude": 28.590337,
+      "pinyin": "chishui",
+      "name": "\u8d64\u6c34",
+      "id": "307"
+    },
+    {
+      "longitude": 117.495707,
+      "latitude": 30.674219,
+      "pinyin": "chizhou",
+      "name": "\u6c60\u5dde",
+      "id": "273"
+    },
+    {
+      "longitude": 106.551557,
+      "latitude": 29.56301,
+      "pinyin": "chongqing",
+      "name": "\u91cd\u5e86",
+      "id": "6"
+    },
+    {
+      "longitude": 107.364973,
+      "latitude": 22.377167,
+      "pinyin": "chongzuo",
+      "name": "\u5d07\u5de6",
+      "id": "2123"
+    },
+    {
+      "longitude": 118.317107,
+      "latitude": 32.301556,
+      "pinyin": "chuzhou",
+      "name": "\u6ec1\u5dde",
+      "id": "280"
+    },
+    {
+      "longitude": 113.586365,
+      "latitude": 23.548404,
+      "pinyin": "conghua",
+      "name": "\u4ece\u5316",
+      "id": "295"
+    },
+    {
+      "longitude": 100.267638,
+      "latitude": 25.606486,
+      "pinyin": "dali",
+      "name": "\u5927\u7406",
+      "id": "437"
+    },
+    {
+      "longitude": 121.614677,
+      "latitude": 38.914024,
+      "pinyin": "dalian",
+      "name": "\u5927\u8fde",
+      "id": "11"
+    },
+    {
+      "longitude": 124.384913,
+      "latitude": 40.127344,
+      "pinyin": "dandong",
+      "name": "\u4e39\u4e1c",
+      "id": "385"
+    },
+    {
+      "longitude": 119.606505,
+      "latitude": 32.00864,
+      "pinyin": "danyang",
+      "name": "\u4e39\u9633",
+      "id": "363"
+    },
+    {
+      "longitude": 109.580822,
+      "latitude": 19.521134,
+      "pinyin": "danzhou",
+      "name": "\u510b\u5dde\u5e02",
+      "id": "2181"
+    },
+    {
+      "longitude": 125.104637,
+      "latitude": 46.59019,
+      "pinyin": "daqing",
+      "name": "\u5927\u5e86",
+      "id": "15"
+    },
+    {
+      "longitude": 113.300126,
+      "latitude": 40.076816,
+      "pinyin": "datong",
+      "name": "\u5927\u540c",
+      "id": "257"
+    },
+    {
+      "longitude": 125.705502,
+      "latitude": 44.537347,
+      "pinyin": "dehui",
+      "name": "\u5fb7\u60e0",
+      "id": "374"
+    },
+    {
+      "longitude": 113.050461,
+      "latitude": 34.453663,
+      "pinyin": "dengfeng",
+      "name": "\u767b\u5c01",
+      "id": "349"
+    },
+    {
+      "longitude": 104.398042,
+      "latitude": 31.126856,
+      "pinyin": "deyang",
+      "name": "\u5fb7\u9633",
+      "id": "2024"
+    },
+    {
+      "longitude": 116.302595,
+      "latitude": 37.450919,
+      "pinyin": "dezhou",
+      "name": "\u5fb7\u5dde",
+      "id": "403"
+    },
+    {
+      "longitude": 114.990251,
+      "latitude": 38.516168,
+      "pinyin": "dingzhou",
+      "name": "\u5b9a\u5dde",
+      "id": "316"
+    },
+    {
+      "longitude": 99.702223,
+      "latitude": 27.818863,
+      "pinyin": "diqingzhou",
+      "name": "\u8fea\u5e86\u5dde",
+      "id": "2115"
+    },
+    {
+      "longitude": 108.651775,
+      "latitude": 19.095341,
+      "pinyin": "dongfangshi",
+      "name": "\u4e1c\u65b9\u5e02",
+      "id": "2180"
+    },
+    {
+      "longitude": 113.751765,
+      "latitude": 23.020536,
+      "pinyin": "dongguan",
+      "name": "\u4e1c\u839e",
+      "id": "54"
+    },
+    {
+      "longitude": 120.241561,
+      "latitude": 29.289634,
+      "pinyin": "dongyang",
+      "name": "\u4e1c\u9633",
+      "id": "445"
+    },
+    {
+      "longitude": 118.674767,
+      "latitude": 37.434751,
+      "pinyin": "dongying",
+      "name": "\u4e1c\u8425",
+      "id": "37"
+    },
+    {
+      "longitude": 103.646978,
+      "latitude": 30.988315,
+      "pinyin": "dujiangyan",
+      "name": "\u90fd\u6c5f\u5830",
+      "id": "2219"
+    },
+    {
+      "longitude": 128.232013,
+      "latitude": 43.372413,
+      "pinyin": "dunhua",
+      "name": "\u6566\u5316",
+      "id": "373"
+    },
+    {
+      "longitude": 94.661881,
+      "latitude": 40.14213,
+      "pinyin": "dunhuang",
+      "name": "\u6566\u714c",
+      "id": "309"
+    },
+    {
+      "longitude": 107.518727,
+      "latitude": 26.259407,
+      "pinyin": "duyun",
+      "name": "\u90fd\u5300",
+      "id": "303"
+    },
+    {
+      "longitude": 109.781327,
+      "latitude": 39.608266,
+      "pinyin": "eerduosi",
+      "name": "\u9102\u5c14\u591a\u65af",
+      "id": "391"
+    },
+    {
+      "longitude": 103.484614,
+      "latitude": 29.601212,
+      "pinyin": "emeishan",
+      "name": "\u5ce8\u7709\u5c71",
+      "id": "416"
+    },
+    {
+      "longitude": 109.488102,
+      "latitude": 30.2721,
+      "pinyin": "enshi",
+      "name": "\u6069\u65bd",
+      "id": "2072"
+    },
+    {
+      "longitude": 114.894843,
+      "latitude": 30.39194,
+      "pinyin": "ezhou",
+      "name": "\u9102\u5dde",
+      "id": "334"
+    },
+    {
+      "longitude": 113.121416,
+      "latitude": 23.021548,
+      "pinyin": "foshan",
+      "name": "\u4f5b\u5c71",
+      "id": "71"
+    },
+    {
+      "longitude": 123.957208,
+      "latitude": 41.880872,
+      "pinyin": "fushun",
+      "name": "\u629a\u987a",
+      "id": "256"
+    },
+    {
+      "longitude": 121.670497,
+      "latitude": 42.021491,
+      "pinyin": "fuxin",
+      "name": "\u961c\u65b0",
+      "id": "2083"
+    },
+    {
+      "longitude": 115.814144,
+      "latitude": 32.890124,
+      "pinyin": "fuyangah",
+      "name": "\u961c\u9633",
+      "id": "271"
+    },
+    {
+      "longitude": 119.96017,
+      "latitude": 30.048838,
+      "pinyin": "fuyangzj",
+      "name": "\u5bcc\u9633",
+      "id": "448"
+    },
+    {
+      "longitude": 119.296494,
+      "latitude": 26.074508,
+      "pinyin": "fuzhou",
+      "name": "\u798f\u5dde",
+      "id": "14"
+    },
+    {
+      "longitude": 116.358182,
+      "latitude": 27.949103,
+      "pinyin": "fuzhoushi",
+      "name": "\u629a\u5dde",
+      "id": "2259"
+    },
+    {
+      "longitude": 114.933553,
+      "latitude": 25.829209,
+      "pinyin": "ganzhou",
+      "name": "\u8d63\u5dde",
+      "id": "377"
+    },
+    {
+      "longitude": 106.633314,
+      "latitude": 30.455879,
+      "pinyin": "guangan",
+      "name": "\u5e7f\u5b89",
+      "id": "2310"
+    },
+    {
+      "longitude": 113.264435,
+      "latitude": 23.129163,
+      "pinyin": "guangzhou",
+      "name": "\u5e7f\u5dde",
+      "flag":1,
+      "id": "5"
+    },
+    {
+      "longitude": 110.290195,
+      "latitude": 25.273566,
+      "pinyin": "guilin",
+      "name": "\u6842\u6797",
+      "id": "66"
+    },
+    {
+      "longitude": 106.630104,
+      "latitude": 26.647481,
+      "pinyin": "guiyang",
+      "name": "\u8d35\u9633",
+      "id": "38"
+    },
+    {
+      "longitude": 126.534967,
+      "latitude": 45.803775,
+      "pinyin": "haerbin",
+      "name": "\u54c8\u5c14\u6ee8",
+      "id": "33"
+    },
+    {
+      "longitude": 122.685217,
+      "latitude": 40.882377,
+      "pinyin": "haicheng",
+      "name": "\u6d77\u57ce",
+      "id": "387"
+    },
+    {
+      "longitude": 110.328873,
+      "latitude": 20.030765,
+      "pinyin": "haikou",
+      "name": "\u6d77\u53e3",
+      "id": "65"
+    },
+    {
+      "longitude": 120.680748,
+      "latitude": 30.510664,
+      "pinyin": "haining",
+      "name": "\u6d77\u5b81",
+      "id": "449"
+    },
+    {
+      "longitude": 93.514917,
+      "latitude": 42.818501,
+      "pinyin": "hami",
+      "name": "\u54c8\u5bc6",
+      "id": "432"
+    },
+    {
+      "longitude": 114.492968,
+      "latitude": 36.612267,
+      "pinyin": "handan",
+      "name": "\u90af\u90f8",
+      "id": "260"
+    },
+    {
+      "longitude": 120.155069,
+      "latitude": 30.274089,
+      "pinyin": "hangzhou",
+      "name": "\u676d\u5dde",
+      "id": "10"
+    },
+    {
+      "longitude": 107.023329,
+      "latitude": 33.067915,
+      "pinyin": "hanzhong",
+      "name": "\u6c49\u4e2d",
+      "id": "420"
+    },
+    {
+      "longitude": 114.297273,
+      "latitude": 35.747225,
+      "pinyin": "hebi",
+      "name": "\u9e64\u58c1",
+      "id": "2036"
+    },
+    {
+      "longitude": 117.227271,
+      "latitude": 31.821448,
+      "pinyin": "hefei",
+      "name": "\u5408\u80a5",
+      "id": "20"
+    },
+    {
+      "longitude": 127.52846,
+      "latitude": 50.245297,
+      "pinyin": "heihe",
+      "name": "\u9ed1\u6cb3",
+      "id": "343"
+    },
+    {
+      "longitude": 112.5719,
+      "latitude": 26.89384,
+      "pinyin": "hengyang",
+      "name": "\u8861\u9633",
+      "id": "39"
+    },
+    {
+      "longitude": 115.69868,
+      "latitude": 37.735302,
+      "pinyin": "henshui",
+      "name": "\u8861\u6c34",
+      "id": "315"
+    },
+    {
+      "longitude": 79.922211,
+      "latitude": 37.114157,
+      "pinyin": "hetian",
+      "name": "\u548c\u7530",
+      "id": "429"
+    },
+    {
+      "longitude": 114.70045,
+      "latitude": 23.743538,
+      "pinyin": "heyuan",
+      "name": "\u6cb3\u6e90",
+      "id": "293"
+    },
+    {
+      "longitude": 115.480656,
+      "latitude": 35.23375,
+      "pinyin": "heze",
+      "name": "\u83cf\u6cfd",
+      "id": "412"
+    },
+    {
+      "longitude": 113.337232,
+      "latitude": 23.473191,
+      "pinyin": "huadu",
+      "name": "\u82b1\u90fd",
+      "id": "294"
+    },
+    {
+      "longitude": 119.015288,
+      "latitude": 33.61036,
+      "pinyin": "huaian",
+      "name": "\u6dee\u5b89",
+      "id": "358"
+    },
+    {
+      "longitude": 116.798265,
+      "latitude": 33.955845,
+      "pinyin": "huaibei",
+      "name": "\u6dee\u5317",
+      "id": "278"
+    },
+    {
+      "longitude": 109.998488,
+      "latitude": 27.554978,
+      "pinyin": "huaihua",
+      "name": "\u6000\u5316",
+      "id": "326"
+    },
+    {
+      "longitude": 116.999933,
+      "latitude": 32.625478,
+      "pinyin": "huainan",
+      "name": "\u6dee\u5357",
+      "id": "270"
+    },
+    {
+      "longitude": 114.872402,
+      "latitude": 30.453906,
+      "pinyin": "huanggang",
+      "name": "\u9ec4\u5188",
+      "id": "2069"
+    },
+    {
+      "longitude": 118.337476,
+      "latitude": 29.714683,
+      "pinyin": "huangshan",
+      "name": "\u9ec4\u5c71",
+      "id": "272"
+    },
+    {
+      "longitude": 115.03852,
+      "latitude": 30.199652,
+      "pinyin": "huangshi",
+      "name": "\u9ec4\u77f3",
+      "id": "333"
+    },
+    {
+      "longitude": 111.748847,
+      "latitude": 40.84231,
+      "pinyin": "huhehaote",
+      "name": "\u547c\u548c\u6d69\u7279",
+      "id": "64"
+    },
+    {
+      "longitude": 114.416196,
+      "latitude": 23.111847,
+      "pinyin": "huizhou",
+      "name": "\u60e0\u5dde",
+      "id": "287"
+    },
+    {
+      "longitude": 120.836827,
+      "latitude": 40.710953,
+      "pinyin": "huludao",
+      "name": "\u846b\u82a6\u5c9b",
+      "id": "73"
+    },
+    {
+      "longitude": 119.765715,
+      "latitude": 49.211498,
+      "pinyin": "hulunbeier",
+      "name": "\u547c\u4f26\u8d1d\u5c14",
+      "id": "2211"
+    },
+    {
+      "longitude": 120.086818,
+      "latitude": 30.89436,
+      "pinyin": "huzhou",
+      "name": "\u6e56\u5dde",
+      "id": "443"
+    },
+    {
+      "longitude": 130.318917,
+      "latitude": 46.799923,
+      "pinyin": "jiamusi",
+      "name": "\u4f73\u6728\u65af",
+      "id": "341"
+    },
+    {
+      "longitude": 119.281159,
+      "latitude": 29.474817,
+      "pinyin": "jiande",
+      "name": "\u5efa\u5fb7",
+      "id": "447"
+    },
+    {
+      "longitude": 113.081831,
+      "latitude": 22.578723,
+      "pinyin": "jiangmen",
+      "name": "\u6c5f\u95e8",
+      "id": "285"
+    },
+    {
+      "longitude": 120.284946,
+      "latitude": 31.920673,
+      "pinyin": "jiangyin",
+      "name": "\u6c5f\u9634",
+      "id": "364"
+    },
+    {
+      "longitude": 126.184073,
+      "latitude": 41.130403,
+      "pinyin": "jianjl",
+      "name": "\u96c6\u5b89",
+      "id": "366"
+    },
+    {
+      "longitude": 114.992913,
+      "latitude": 27.113039,
+      "pinyin": "jianjx",
+      "name": "\u5409\u5b89",
+      "id": "378"
+    },
+    {
+      "longitude": 127.344501,
+      "latitude": 43.723713,
+      "pinyin": "jiaohe",
+      "name": "\u86df\u6cb3",
+      "id": "372"
+    },
+    {
+      "longitude": 113.241823,
+      "latitude": 35.215893,
+      "pinyin": "jiaozuo",
+      "name": "\u7126\u4f5c",
+      "id": "352"
+    },
+    {
+      "longitude": 120.758543,
+      "latitude": 30.753924,
+      "pinyin": "jiaxing",
+      "name": "\u5609\u5174",
+      "id": "442"
+    },
+    {
+      "longitude": 116.372831,
+      "latitude": 23.549993,
+      "pinyin": "jieyang",
+      "name": "\u63ed\u9633",
+      "id": "297"
+    },
+    {
+      "longitude": 126.549572,
+      "latitude": 43.837883,
+      "pinyin": "jilin",
+      "name": "\u5409\u6797",
+      "id": "486"
+    },
+    {
+      "longitude": 116.994917,
+      "latitude": 36.665282,
+      "pinyin": "jinan",
+      "name": "\u6d4e\u5357",
+      "id": "28"
+    },
+    {
+      "longitude": 112.851768,
+      "latitude": 35.49087,
+      "pinyin": "jincheng",
+      "name": "\u664b\u57ce",
+      "id": "394"
+    },
+    {
+      "longitude": 117.17842,
+      "latitude": 29.268836,
+      "pinyin": "jindezhen",
+      "name": "\u666f\u5fb7\u9547",
+      "id": "380"
+    },
+    {
+      "longitude": 112.199265,
+      "latitude": 31.035423,
+      "pinyin": "jingmen",
+      "name": "\u8346\u95e8",
+      "id": "336"
+    },
+    {
+      "longitude": 112.239741,
+      "latitude": 30.335165,
+      "pinyin": "jingzhou",
+      "name": "\u8346\u5dde",
+      "id": "335"
+    },
+    {
+      "longitude": 119.647421,
+      "latitude": 29.079164,
+      "pinyin": "jinhua",
+      "name": "\u91d1\u534e",
+      "id": "41"
+    },
+    {
+      "longitude": 116.587259,
+      "latitude": 35.414864,
+      "pinyin": "jining",
+      "name": "\u6d4e\u5b81",
+      "id": "40"
+    },
+    {
+      "longitude": 112.752695,
+      "latitude": 37.687024,
+      "pinyin": "jinzhong",
+      "name": "\u664b\u4e2d",
+      "id": "398"
+    },
+    {
+      "longitude": 121.127063,
+      "latitude": 41.095123,
+      "pinyin": "jinzhou",
+      "name": "\u9526\u5dde",
+      "id": "383"
+    },
+    {
+      "longitude": 109.698349,
+      "latitude": 28.26236,
+      "pinyin": "jishou",
+      "name": "\u5409\u9996",
+      "id": "1991"
+    },
+    {
+      "longitude": 116.001982,
+      "latitude": 29.705096,
+      "pinyin": "jiujiang",
+      "name": "\u4e5d\u6c5f",
+      "id": "381"
+    },
+    {
+      "longitude": 130.969333,
+      "latitude": 45.295075,
+      "pinyin": "jixi",
+      "name": "\u9e21\u897f",
+      "id": "344"
+    },
+    {
+      "longitude": 112.601922,
+      "latitude": 35.067241,
+      "pinyin": "jiyuan",
+      "name": "\u6d4e\u6e90",
+      "id": "2203"
+    },
+    {
+      "longitude": 114.307624,
+      "latitude": 34.797683,
+      "pinyin": "kaifeng",
+      "name": "\u5f00\u5c01",
+      "id": "345"
+    },
+    {
+      "longitude": 75.989755,
+      "latitude": 39.4704,
+      "pinyin": "kashi",
+      "name": "\u5580\u4ec0",
+      "id": "430"
+    },
+    {
+      "longitude": 84.889207,
+      "latitude": 45.579889,
+      "pinyin": "kelamayi",
+      "name": "\u514b\u62c9\u739b\u4f9d",
+      "id": "428"
+    },
+    {
+      "longitude": 102.722202,
+      "latitude": 25.037721,
+      "pinyin": "kunming",
+      "name": "\u6606\u660e",
+      "id": "17"
+    },
+    {
+      "longitude": 120.98115,
+      "latitude": 31.384913,
+      "pinyin": "kunshan",
+      "name": "\u6606\u5c71",
+      "id": "359"
+    },
+    {
+      "longitude": 117.676731,
+      "latitude": 36.213691,
+      "pinyin": "laiwu",
+      "name": "\u83b1\u829c",
+      "id": "401"
+    },
+    {
+      "longitude": 116.706651,
+      "latitude": 39.521017,
+      "pinyin": "langfang",
+      "name": "\u5eca\u574a",
+      "id": "312"
+    },
+    {
+      "longitude": 103.834377,
+      "latitude": 36.061255,
+      "pinyin": "lanzhou",
+      "name": "\u5170\u5dde",
+      "id": "42"
+    },
+    {
+      "longitude": 91.140856,
+      "latitude": 29.645554,
+      "pinyin": "lasa",
+      "name": "\u62c9\u8428",
+      "id": "253"
+    },
+    {
+      "longitude": 117.231935,
+      "latitude": 37.729907,
+      "pinyin": "leling",
+      "name": "\u4e50\u9675",
+      "id": "410"
+    },
+    {
+      "longitude": 103.765623,
+      "latitude": 29.552064,
+      "pinyin": "leshan",
+      "name": "\u4e50\u5c71",
+      "id": "417"
+    },
+    {
+      "longitude": 119.221282,
+      "latitude": 34.596544,
+      "pinyin": "lianyungang",
+      "name": "\u8fde\u4e91\u6e2f",
+      "id": "43"
+    },
+    {
+      "longitude": 115.985371,
+      "latitude": 36.456704,
+      "pinyin": "liaocheng",
+      "name": "\u804a\u57ce",
+      "id": "411"
+    },
+    {
+      "longitude": 123.172838,
+      "latitude": 41.269493,
+      "pinyin": "liaoyang",
+      "name": "\u8fbd\u9633",
+      "id": "388"
+    },
+    {
+      "longitude": 125.143532,
+      "latitude": 42.887918,
+      "pinyin": "liaoyuan",
+      "name": "\u8fbd\u6e90",
+      "id": "365"
+    },
+    {
+      "longitude": 100.230376,
+      "latitude": 26.876774,
+      "pinyin": "lijiang",
+      "name": "\u4e3d\u6c5f",
+      "id": "438"
+    },
+    {
+      "longitude": 111.51888,
+      "latitude": 36.088067,
+      "pinyin": "linfen",
+      "name": "\u4e34\u6c7e",
+      "id": "393"
+    },
+    {
+      "longitude": 110.037525,
+      "latitude": 18.506028,
+      "pinyin": "lingshuixian",
+      "name": "\u9675\u6c34\u53bf",
+      "id": "2182"
+    },
+    {
+      "longitude": 126.918138,
+      "latitude": 41.812005,
+      "pinyin": "linjiang",
+      "name": "\u4e34\u6c5f",
+      "id": "368"
+    },
+    {
+      "longitude": 118.347707,
+      "latitude": 35.051712,
+      "pinyin": "linyi",
+      "name": "\u4e34\u6c82",
+      "id": "44"
+    },
+    {
+      "longitude": 119.922817,
+      "latitude": 28.467611,
+      "pinyin": "lishui",
+      "name": "\u4e3d\u6c34",
+      "id": "2034"
+    },
+    {
+      "longitude": 116.505693,
+      "latitude": 31.745011,
+      "pinyin": "liuan",
+      "name": "\u516d\u5b89",
+      "id": "276"
+    },
+    {
+      "longitude": 104.830361,
+      "latitude": 26.592663,
+      "pinyin": "liupanshui",
+      "name": "\u516d\u76d8\u6c34",
+      "id": "305"
+    },
+    {
+      "longitude": 113.64328,
+      "latitude": 28.16379,
+      "pinyin": "liuyang",
+      "name": "\u6d4f\u9633",
+      "id": "328"
+    },
+    {
+      "longitude": 109.415912,
+      "latitude": 24.325468,
+      "pinyin": "liuzhou",
+      "name": "\u67f3\u5dde",
+      "id": "254"
+    },
+    {
+      "longitude": 117.03403,
+      "latitude": 25.100632,
+      "pinyin": "longyan",
+      "name": "\u9f99\u5ca9",
+      "id": "282"
+    },
+    {
+      "longitude": 111.995915,
+      "latitude": 27.701541,
+      "pinyin": "loudi",
+      "name": "\u5a04\u5e95",
+      "id": "1998"
+    },
+    {
+      "longitude": 114.016453,
+      "latitude": 33.581485,
+      "pinyin": "luohe",
+      "name": "\u6f2f\u6cb3",
+      "id": "2040"
+    },
+    {
+      "longitude": 112.454363,
+      "latitude": 34.618154,
+      "pinyin": "luoyang",
+      "name": "\u6d1b\u9633",
+      "id": "70"
+    },
+    {
+      "longitude": 105.442263,
+      "latitude": 28.871864,
+      "pinyin": "luzhou",
+      "name": "\u6cf8\u5dde",
+      "id": "415"
+    },
+    {
+      "longitude": 111.144231,
+      "latitude": 37.518569,
+      "pinyin": "lvliang",
+      "name": "\u5415\u6881",
+      "id": "397"
+    },
+    {
+      "longitude": 118.504657,
+      "latitude": 31.696788,
+      "pinyin": "maanshan",
+      "name": "\u9a6c\u978d\u5c71",
+      "id": "269"
+    },
+    {
+      "longitude": 110.925456,
+      "latitude": 21.662999,
+      "pinyin": "maoming",
+      "name": "\u8302\u540d",
+      "id": "288"
+    },
+    {
+      "longitude": 125.683832,
+      "latitude": 42.530341,
+      "pinyin": "meihekou",
+      "name": "\u6885\u6cb3\u53e3",
+      "id": "370"
+    },
+    {
+      "longitude": 103.848462,
+      "latitude": 30.076015,
+      "pinyin": "meishan",
+      "name": "\u7709\u5c71",
+      "id": "1979"
+    },
+    {
+      "longitude": 116.122469,
+      "latitude": 24.288384,
+      "pinyin": "meizhou",
+      "name": "\u6885\u5dde",
+      "id": "290"
+    },
+    {
+      "longitude": 104.679114,
+      "latitude": 31.46745,
+      "pinyin": "mianyang",
+      "name": "\u7ef5\u9633",
+      "id": "419"
+    },
+    {
+      "longitude": 129.633169,
+      "latitude": 44.551653,
+      "pinyin": "mudanjiang",
+      "name": "\u7261\u4e39\u6c5f",
+      "id": "339"
+    },
+    {
+      "longitude": 115.858089,
+      "latitude": 28.68316,
+      "pinyin": "nanchang",
+      "name": "\u5357\u660c",
+      "id": "30"
+    },
+    {
+      "longitude": 106.110595,
+      "latitude": 30.837888,
+      "pinyin": "nanchong",
+      "name": "\u5357\u5145",
+      "id": "418"
+    },
+    {
+      "longitude": 118.796877,
+      "latitude": 32.060255,
+      "pinyin": "nanjing",
+      "name": "\u5357\u4eac",
+      "flag":1,
+      "id": "8"
+    },
+    {
+      "longitude": 108.365631,
+      "latitude": 22.817642,
+      "pinyin": "nanning",
+      "name": "\u5357\u5b81",
+      "id": "45"
+    },
+    {
+      "longitude": 118.177711,
+      "latitude": 26.641767,
+      "pinyin": "nanping",
+      "name": "\u5357\u5e73",
+      "id": "2222"
+    },
+    {
+      "longitude": 120.894324,
+      "latitude": 31.979997,
+      "pinyin": "nantong",
+      "name": "\u5357\u901a",
+      "id": "22"
+    },
+    {
+      "longitude": 112.528345,
+      "latitude": 32.990615,
+      "pinyin": "nanyang",
+      "name": "\u5357\u9633",
+      "id": "1977"
+    },
+    {
+      "longitude": 121.54399,
+      "latitude": 29.868336,
+      "pinyin": "ningbo",
+      "name": "\u5b81\u6ce2",
+      "id": "24"
+    },
+    {
+      "longitude": 119.526287,
+      "latitude": 26.666291,
+      "pinyin": "ningde",
+      "name": "\u5b81\u5fb7",
+      "id": "283"
+    },
+    {
+      "longitude": 122.070714,
+      "latitude": 41.119997,
+      "pinyin": "panjin",
+      "name": "\u76d8\u9526",
+      "id": "72"
+    },
+    {
+      "longitude": 113.384123,
+      "latitude": 22.936346,
+      "pinyin": "panyu",
+      "name": "\u756a\u79ba",
+      "id": "300"
+    },
+    {
+      "longitude": 101.718637,
+      "latitude": 26.582347,
+      "pinyin": "panzhihua",
+      "name": "\u6500\u679d\u82b1",
+      "id": "413"
+    },
+    {
+      "longitude": 113.192814,
+      "latitude": 33.76619,
+      "pinyin": "pingdingshan",
+      "name": "\u5e73\u9876\u5c71",
+      "id": "2042"
+    },
+    {
+      "longitude": 113.854676,
+      "latitude": 27.622865,
+      "pinyin": "pingxiang",
+      "name": "\u840d\u4e61",
+      "id": "382"
+    },
+    {
+      "longitude": 100.970152,
+      "latitude": 22.777765,
+      "pinyin": "puer",
+      "name": "\u666e\u6d31",
+      "id": "433"
+    },
+    {
+      "longitude": 119.007777,
+      "latitude": 25.454085,
+      "pinyin": "putian",
+      "name": "\u8386\u7530",
+      "id": "1978"
+    },
+    {
+      "longitude": 115.029331,
+      "latitude": 35.762141,
+      "pinyin": "puyang",
+      "name": "\u6fee\u9633",
+      "id": "353"
+    },
+    {
+      "longitude": 118.701144,
+      "latitude": 39.999175,
+      "pinyin": "qianan",
+      "name": "\u8fc1\u5b89",
+      "id": "319"
+    },
+    {
+      "longitude": 107.982825,
+      "latitude": 26.583548,
+      "pinyin": "qiandongnan",
+      "name": "\u9ed4\u4e1c\u5357",
+      "id": "2045"
+    },
+    {
+      "longitude": 112.900165,
+      "latitude": 30.401888,
+      "pinyin": "qianjiang",
+      "name": "\u6f5c\u6c5f",
+      "id": "2076"
+    },
+    {
+      "longitude": 104.906397,
+      "latitude": 25.087823,
+      "pinyin": "qianxinan",
+      "name": "\u9ed4\u897f\u5357",
+      "id": "2161"
+    },
+    {
+      "longitude": 120.382504,
+      "latitude": 36.06722,
+      "pinyin": "qingdao",
+      "name": "\u9752\u5c9b",
+      "id": "12"
+    },
+    {
+      "longitude": 113.056042,
+      "latitude": 23.681801,
+      "pinyin": "qingyuan",
+      "name": "\u6e05\u8fdc",
+      "id": "292"
+    },
+    {
+      "longitude": 119.600492,
+      "latitude": 39.935377,
+      "pinyin": "qinhuangdao",
+      "name": "\u79e6\u7687\u5c9b",
+      "id": "313"
+    },
+    {
+      "longitude": 108.654371,
+      "latitude": 21.980968,
+      "pinyin": "qinzhou",
+      "name": "\u94a6\u5dde",
+      "id": "2029"
+    },
+    {
+      "longitude": 110.474671,
+      "latitude": 19.258404,
+      "pinyin": "qionghaishi",
+      "name": "\u743c\u6d77\u5e02",
+      "id": "2183"
+    },
+    {
+      "longitude": 109.838384,
+      "latitude": 19.033369,
+      "pinyin": "qiongzhongxian",
+      "name": "\u743c\u4e2d\u53bf",
+      "id": "2184"
+    },
+    {
+      "longitude": 123.918186,
+      "latitude": 47.354348,
+      "pinyin": "qiqihaer",
+      "name": "\u9f50\u9f50\u54c8\u5c14",
+      "id": "258"
+    },
+    {
+      "longitude": 131.004915,
+      "latitude": 45.771975,
+      "pinyin": "qitaihe",
+      "name": "\u4e03\u53f0\u6cb3",
+      "id": "340"
+    },
+    {
+      "longitude": 118.586812,
+      "latitude": 24.907574,
+      "pinyin": "quanzhou",
+      "name": "\u6cc9\u5dde",
+      "id": "55"
+    },
+    {
+      "longitude": 116.986532,
+      "latitude": 35.581137,
+      "pinyin": "qufu",
+      "name": "\u66f2\u961c",
+      "id": "407"
+    },
+    {
+      "longitude": 103.796167,
+      "latitude": 25.49001,
+      "pinyin": "qujing",
+      "name": "\u66f2\u9756",
+      "id": "436"
+    },
+    {
+      "longitude": 118.874375,
+      "latitude": 28.93581,
+      "pinyin": "quzhou",
+      "name": "\u8862\u5dde",
+      "id": "444"
+    },
+    {
+      "longitude": 106.40115,
+      "latitude": 27.791979,
+      "pinyin": "renhuai",
+      "name": "\u4ec1\u6000",
+      "id": "306"
+    },
+    {
+      "longitude": 119.526888,
+      "latitude": 35.416377,
+      "pinyin": "rizhao",
+      "name": "\u65e5\u7167",
+      "id": "402"
+    },
+    {
+      "longitude": 97.851885,
+      "latitude": 24.012777,
+      "pinyin": "ruili",
+      "name": "\u745e\u4e3d",
+      "id": "434"
+    },
+    {
+      "longitude": 112.844649,
+      "latitude": 34.167405,
+      "pinyin": "ruzhou",
+      "name": "\u6c5d\u5dde",
+      "id": "348"
+    },
+    {
+      "longitude": 117.078295,
+      "latitude": 39.982718,
+      "pinyin": "sanhe",
+      "name": "\u4e09\u6cb3",
+      "id": "318"
+    },
+    {
+      "longitude": 111.200144,
+      "latitude": 34.772301,
+      "pinyin": "sanmenxia",
+      "name": "\u4e09\u95e8\u5ce1",
+      "id": "2124"
+    },
+    {
+      "longitude": 117.638716,
+      "latitude": 26.263465,
+      "pinyin": "sanming",
+      "name": "\u4e09\u660e",
+      "id": "2316"
+    },
+    {
+      "longitude": 109.511909,
+      "latitude": 18.252847,
+      "pinyin": "sanya",
+      "name": "\u4e09\u4e9a",
+      "id": "322"
+    },
+    {
+      "longitude": 121.448364,
+      "latitude": 31.195029,
+      "pinyin": "shanghai",
+      "name": "\u4e0a\u6d77",
+      "flag":1,
+      "id": "2"
+    },
+    {
+      "longitude": 115.656394,
+      "latitude": 34.414183,
+      "pinyin": "shangqiu",
+      "name": "\u5546\u4e18",
+      "id": "350"
+    },
+    {
+      "longitude": 117.943433,
+      "latitude": 28.454863,
+      "pinyin": "shangrao",
+      "name": "\u4e0a\u9976",
+      "id": "379"
+    },
+    {
+      "longitude": 116.681943,
+      "latitude": 23.353362,
+      "pinyin": "shantou",
+      "name": "\u6c55\u5934",
+      "id": "245"
+    },
+    {
+      "longitude": 115.375279,
+      "latitude": 22.786211,
+      "pinyin": "shanwei",
+      "name": "\u6c55\u5c3e",
+      "id": "296"
+    },
+    {
+      "longitude": 113.597522,
+      "latitude": 24.810403,
+      "pinyin": "shaoguan",
+      "name": "\u97f6\u5173",
+      "id": "291"
+    },
+    {
+      "longitude": 112.526502,
+      "latitude": 27.915005,
+      "pinyin": "shaoshan",
+      "name": "\u97f6\u5c71",
+      "id": "327"
+    },
+    {
+      "longitude": 120.586109,
+      "latitude": 29.995762,
+      "pinyin": "shaoxing",
+      "name": "\u7ecd\u5174",
+      "id": "440"
+    },
+    {
+      "longitude": 111.467791,
+      "latitude": 27.238779,
+      "pinyin": "shaoyang",
+      "name": "\u90b5\u9633",
+      "id": "2104"
+    },
+    {
+      "longitude": 123.43147,
+      "latitude": 41.80572,
+      "pinyin": "shenyang",
+      "name": "\u6c88\u9633",
+      "id": "23"
+    },
+    {
+      "longitude": 114.057868,
+      "latitude": 22.543099,
+      "pinyin": "shenzhen",
+      "name": "\u6df1\u5733",
+      "flag":1,
+      "id": "4"
+    },
+    {
+      "longitude": 114.51486,
+      "latitude": 38.042307,
+      "pinyin": "shijiazhuang",
+      "name": "\u77f3\u5bb6\u5e84",
+      "id": "32"
+    },
+    {
+      "longitude": 110.788811,
+      "latitude": 32.65059,
+      "pinyin": "shiyan",
+      "name": "\u5341\u5830",
+      "id": "337"
+    },
+    {
+      "longitude": 106.383036,
+      "latitude": 38.984346,
+      "pinyin": "shizuishan",
+      "name": "\u77f3\u5634\u5c71",
+      "id": "2168"
+    },
+    {
+      "longitude": 118.790652,
+      "latitude": 36.85548,
+      "pinyin": "shouguang",
+      "name": "\u5bff\u5149",
+      "id": "408"
+    },
+    {
+      "longitude": 113.293359,
+      "latitude": 22.80524,
+      "pinyin": "shunde",
+      "name": "\u987a\u5fb7",
+      "id": "301"
+    },
+    {
+      "longitude": 112.432714,
+      "latitude": 39.331149,
+      "pinyin": "shuozhou",
+      "name": "\u6714\u5dde",
+      "id": "399"
+    },
+    {
+      "longitude": 124.350352,
+      "latitude": 43.166937,
+      "pinyin": "siping",
+      "name": "\u56db\u5e73",
+      "id": "376"
+    },
+    {
+      "longitude": 131.152546,
+      "latitude": 44.412309,
+      "pinyin": "suifenhe",
+      "name": "\u7ee5\u82ac\u6cb3",
+      "id": "338"
+    },
+    {
+      "longitude": 105.59293,
+      "latitude": 30.532796,
+      "pinyin": "suining",
+      "name": "\u9042\u5b81",
+      "id": "2205"
+    },
+    {
+      "longitude": 113.382544,
+      "latitude": 31.690116,
+      "pinyin": "suizhou",
+      "name": "\u968f\u5dde",
+      "id": "2065"
+    },
+    {
+      "longitude": 118.275497,
+      "latitude": 33.961994,
+      "pinyin": "suqian",
+      "name": "\u5bbf\u8fc1",
+      "id": "357"
+    },
+    {
+      "longitude": 120.585316,
+      "latitude": 31.298886,
+      "pinyin": "suzhou",
+      "name": "\u82cf\u5dde",
+      "id": "26"
+    },
+    {
+      "longitude": 117.087614,
+      "latitude": 36.200252,
+      "pinyin": "taian",
+      "name": "\u6cf0\u5b89",
+      "id": "400"
+    },
+    {
+      "longitude": 121.559834,
+      "latitude": 25.091075,
+      "pinyin": "taibei",
+      "name": "\u53f0\u5317",
+      "id": "36"
+    },
+    {
+      "longitude": 112.550619,
+      "latitude": 37.870662,
+      "pinyin": "taiyuan",
+      "name": "\u592a\u539f",
+      "id": "46"
+    },
+    {
+      "longitude": 120.941737,
+      "latitude": 24.233208,
+      "pinyin": "taizhong",
+      "name": "\u53f0\u4e2d",
+      "id": "427"
+    },
+    {
+      "longitude": 119.923116,
+      "latitude": 32.455778,
+      "pinyin": "taizhousd",
+      "name": "\u6cf0\u5dde",
+      "id": "356"
+    },
+    {
+      "longitude": 121.420757,
+      "latitude": 28.656386,
+      "pinyin": "taizhouzj",
+      "name": "\u53f0\u5dde",
+      "id": "439"
+    },
+    {
+      "longitude": 117.231445,
+      "latitude": 39.108652,
+      "pinyin": "tanggu",
+      "name": "\u5858\u6cbd",
+      "id": "426"
+    },
+    {
+      "longitude": 118.180407,
+      "latitude": 39.630476,
+      "pinyin": "tangshan",
+      "name": "\u5510\u5c71",
+      "id": "247"
+    },
+    {
+      "longitude": 117.164388,
+      "latitude": 35.084021,
+      "pinyin": "tengzhou",
+      "name": "\u6ed5\u5dde",
+      "id": "404"
+    },
+    {
+      "longitude": 117.200983,
+      "latitude": 39.084158,
+      "pinyin": "tianjin",
+      "name": "\u5929\u6d25",
+      "id": "7"
+    },
+    {
+      "longitude": 105.724947,
+      "latitude": 34.580862,
+      "pinyin": "tianshui",
+      "name": "\u5929\u6c34",
+      "id": "308"
+    },
+    {
+      "longitude": 123.841819,
+      "latitude": 42.286624,
+      "pinyin": "tieling",
+      "name": "\u94c1\u5cad",
+      "id": "384"
+    },
+    {
+      "longitude": 125.939697,
+      "latitude": 41.728401,
+      "pinyin": "tonghua",
+      "name": "\u901a\u5316",
+      "id": "367"
+    },
+    {
+      "longitude": 117.810841,
+      "latitude": 30.94453,
+      "pinyin": "tongling",
+      "name": "\u94dc\u9675",
+      "id": "274"
+    },
+    {
+      "longitude": 109.187666,
+      "latitude": 27.714595,
+      "pinyin": "tongren",
+      "name": "\u94dc\u4ec1",
+      "id": "2145"
+    },
+    {
+      "longitude": 120.565102,
+      "latitude": 30.63007,
+      "pinyin": "tongxiang",
+      "name": "\u6850\u4e61",
+      "id": "450"
+    },
+    {
+      "longitude": 89.189655,
+      "latitude": 42.951384,
+      "pinyin": "tulufan",
+      "name": "\u5410\u9c81\u756a",
+      "id": "431"
+    },
+    {
+      "longitude": 110.103415,
+      "latitude": 19.351746,
+      "pinyin": "tunchang",
+      "name": "\u5c6f\u660c\u53bf",
+      "id": "2185"
+    },
+    {
+      "longitude": 110.391116,
+      "latitude": 18.795102,
+      "pinyin": "wanningshi",
+      "name": "\u4e07\u5b81\u5e02",
+      "id": "2187"
+    },
+    {
+      "longitude": 119.16193,
+      "latitude": 36.706691,
+      "pinyin": "weifang",
+      "name": "\u6f4d\u574a",
+      "id": "48"
+    },
+    {
+      "longitude": 122.12042,
+      "latitude": 37.513068,
+      "pinyin": "weihai",
+      "name": "\u5a01\u6d77",
+      "id": "47"
+    },
+    {
+      "longitude": 109.509786,
+      "latitude": 34.499995,
+      "pinyin": "weinan",
+      "name": "\u6e2d\u5357",
+      "id": "423"
+    },
+    {
+      "longitude": 110.797648,
+      "latitude": 19.54338,
+      "pinyin": "wenchang",
+      "name": "\u6587\u660c\u5e02",
+      "id": "2186"
+    },
+    {
+      "longitude": 122.058128,
+      "latitude": 37.193913,
+      "pinyin": "wendeng",
+      "name": "\u6587\u767b",
+      "id": "409"
+    },
+    {
+      "longitude": 120.699367,
+      "latitude": 27.994267,
+      "pinyin": "wenzhou",
+      "name": "\u6e29\u5dde",
+      "id": "62"
+    },
+    {
+      "longitude": 106.794226,
+      "latitude": 39.654991,
+      "pinyin": "wuhai",
+      "name": "\u4e4c\u6d77",
+      "id": "2131"
+    },
+    {
+      "longitude": 114.305357,
+      "latitude": 30.593087,
+      "pinyin": "wuhan",
+      "name": "\u6b66\u6c49",
+      "flag":1,
+      "id": "9"
+    },
+    {
+      "longitude": 118.385156,
+      "latitude": 31.33879,
+      "pinyin": "wuhu",
+      "name": "\u829c\u6e56",
+      "id": "49"
+    },
+    {
+      "longitude": 113.135332,
+      "latitude": 40.996859,
+      "pinyin": "wulanchabu",
+      "name": "\u4e4c\u5170\u5bdf\u5e03",
+      "id": "1988"
+    },
+    {
+      "longitude": 87.617298,
+      "latitude": 43.825666,
+      "pinyin": "wulumuqi",
+      "name": "\u4e4c\u9c81\u6728\u9f50",
+      "id": "259"
+    },
+    {
+      "longitude": 120.303027,
+      "latitude": 31.566145,
+      "pinyin": "wuxi",
+      "name": "\u65e0\u9521",
+      "id": "27"
+    },
+    {
+      "longitude": 118.03531,
+      "latitude": 27.756648,
+      "pinyin": "wuyishan",
+      "name": "\u6b66\u5937\u5c71",
+      "id": "284"
+    },
+    {
+      "longitude": 106.19823,
+      "latitude": 37.997476,
+      "pinyin": "wuzhong",
+      "name": "\u5434\u5fe0",
+      "id": "2302"
+    },
+    {
+      "longitude": 118.08942,
+      "latitude": 24.479836,
+      "pinyin": "xiamen",
+      "name": "\u53a6\u95e8",
+      "id": "29"
+    },
+    {
+      "longitude": 108.944269,
+      "latitude": 34.264987,
+      "pinyin": "xian",
+      "name": "\u897f\u5b89",
+      "flag":1,
+      "id": "3"
+    },
+    {
+      "longitude": 114.109497,
+      "latitude": 22.396428,
+      "pinyin": "xianggang",
+      "name": "\u9999\u6e2f",
+      "id": "34"
+    },
+    {
+      "longitude": 112.944049,
+      "latitude": 27.829738,
+      "pinyin": "xiangtan",
+      "name": "\u6e58\u6f6d",
+      "id": "50"
+    },
+    {
+      "longitude": 112.122415,
+      "latitude": 32.008986,
+      "pinyin": "xiangyang",
+      "name": "\u8944\u9633",
+      "id": "332"
+    },
+    {
+      "longitude": 114.322578,
+      "latitude": 29.841517,
+      "pinyin": "xianning",
+      "name": "\u54b8\u5b81",
+      "id": "2032"
+    },
+    {
+      "longitude": 113.454572,
+      "latitude": 30.362604,
+      "pinyin": "xiantao",
+      "name": "\u4ed9\u6843",
+      "id": "2075"
+    },
+    {
+      "longitude": 108.709003,
+      "latitude": 34.329563,
+      "pinyin": "xianyang",
+      "name": "\u54b8\u9633",
+      "id": "421"
+    },
+    {
+      "longitude": 113.916853,
+      "latitude": 30.924612,
+      "pinyin": "xiaogan",
+      "name": "\u5b5d\u611f",
+      "id": "2198"
+    },
+    {
+      "longitude": 102.264443,
+      "latitude": 27.89442,
+      "pinyin": "xichang",
+      "name": "\u897f\u660c",
+      "id": "1992"
+    },
+    {
+      "longitude": 114.504855,
+      "latitude": 37.070435,
+      "pinyin": "xingtai",
+      "name": "\u90a2\u53f0",
+      "id": "2146"
+    },
+    {
+      "longitude": 113.383251,
+      "latitude": 34.787494,
+      "pinyin": "xingyang",
+      "name": "\u8365\u9633",
+      "id": "347"
+    },
+    {
+      "longitude": 101.778208,
+      "latitude": 36.617085,
+      "pinyin": "xining",
+      "name": "\u897f\u5b81",
+      "id": "251"
+    },
+    {
+      "longitude": 122.828053,
+      "latitude": 41.997612,
+      "pinyin": "xinmin",
+      "name": "\u65b0\u6c11",
+      "id": "390"
+    },
+    {
+      "longitude": 113.9268,
+      "latitude": 35.303004,
+      "pinyin": "xinxiang",
+      "name": "\u65b0\u4e61",
+      "id": "346"
+    },
+    {
+      "longitude": 114.068871,
+      "latitude": 32.123233,
+      "pinyin": "xinyang",
+      "name": "\u4fe1\u9633",
+      "id": "354"
+    },
+    {
+      "longitude": 114.917238,
+      "latitude": 27.818274,
+      "pinyin": "xinyu",
+      "name": "\u65b0\u4f59",
+      "id": "2021"
+    },
+    {
+      "longitude": 113.740589,
+      "latitude": 34.395568,
+      "pinyin": "xinzheng",
+      "name": "\u65b0\u90d1",
+      "id": "351"
+    },
+    {
+      "longitude": 112.734153,
+      "latitude": 38.416747,
+      "pinyin": "xinzhou",
+      "name": "\u5ffb\u5dde",
+      "id": "2080"
+    },
+    {
+      "longitude": 100.797353,
+      "latitude": 22.008188,
+      "pinyin": "xishuangbanna",
+      "name": "\u897f\u53cc\u7248\u7eb3",
+      "id": "2062"
+    },
+    {
+      "longitude": 118.758816,
+      "latitude": 30.940718,
+      "pinyin": "xuancheng",
+      "name": "\u5ba3\u57ce",
+      "id": "275"
+    },
+    {
+      "longitude": 113.85264,
+      "latitude": 34.035399,
+      "pinyin": "xuchang",
+      "name": "\u8bb8\u660c",
+      "id": "2038"
+    },
+    {
+      "longitude": 117.284067,
+      "latitude": 34.20475,
+      "pinyin": "xuzhou",
+      "name": "\u5f90\u5dde",
+      "id": "51"
+    },
+    {
+      "longitude": 103.013347,
+      "latitude": 29.980463,
+      "pinyin": "yaan",
+      "name": "\u96c5\u5b89",
+      "id": "2096"
+    },
+    {
+      "longitude": 109.489635,
+      "latitude": 36.585424,
+      "pinyin": "yanan",
+      "name": "\u5ef6\u5b89",
+      "id": "424"
+    },
+    {
+      "longitude": 129.509126,
+      "latitude": 42.891258,
+      "pinyin": "yanbianzhou",
+      "name": "\u5ef6\u8fb9\u5dde",
+      "id": "2204"
+    },
+    {
+      "longitude": 120.163561,
+      "latitude": 33.347378,
+      "pinyin": "yancheng",
+      "name": "\u76d0\u57ce",
+      "id": "52"
+    },
+    {
+      "longitude": 111.982207,
+      "latitude": 21.857938,
+      "pinyin": "yangjiang",
+      "name": "\u9633\u6c5f",
+      "id": "298"
+    },
+    {
+      "longitude": 113.58041,
+      "latitude": 37.856582,
+      "pinyin": "yangquan",
+      "name": "\u9633\u6cc9",
+      "id": "2142"
+    },
+    {
+      "longitude": 119.412966,
+      "latitude": 32.39421,
+      "pinyin": "yangzhou",
+      "name": "\u626c\u5dde",
+      "id": "53"
+    },
+    {
+      "longitude": 121.447926,
+      "latitude": 37.463819,
+      "pinyin": "yantai",
+      "name": "\u70df\u53f0",
+      "id": "18"
+    },
+    {
+      "longitude": 116.783834,
+      "latitude": 35.553144,
+      "pinyin": "yanzhou",
+      "name": "\u5156\u5dde",
+      "id": "406"
+    },
+    {
+      "longitude": 104.643373,
+      "latitude": 28.751878,
+      "pinyin": "yibin",
+      "name": "\u5b9c\u5bbe",
+      "id": "414"
+    },
+    {
+      "longitude": 111.286471,
+      "latitude": 30.691967,
+      "pinyin": "yichang",
+      "name": "\u5b9c\u660c",
+      "id": "331"
+    },
+    {
+      "longitude": 128.840661,
+      "latitude": 47.727542,
+      "pinyin": "yichun",
+      "name": "\u4f0a\u6625",
+      "id": "342"
+    },
+    {
+      "longitude": 114.416606,
+      "latitude": 27.815619,
+      "pinyin": "yichun",
+      "name": "\u5b9c\u6625",
+      "id": "2019"
+    },
+    {
+      "longitude": 106.230909,
+      "latitude": 38.487194,
+      "pinyin": "yinchuan",
+      "name": "\u94f6\u5ddd",
+      "id": "56"
+    },
+    {
+      "longitude": 122.234996,
+      "latitude": 40.667061,
+      "pinyin": "yingkou",
+      "name": "\u8425\u53e3",
+      "id": "386"
+    },
+    {
+      "longitude": 120.075058,
+      "latitude": 29.306841,
+      "pinyin": "yiwu",
+      "name": "\u4e49\u4e4c",
+      "id": "446"
+    },
+    {
+      "longitude": 119.823363,
+      "latitude": 31.340527,
+      "pinyin": "yixing",
+      "name": "\u5b9c\u5174",
+      "id": "360"
+    },
+    {
+      "longitude": 112.355582,
+      "latitude": 28.553883,
+      "pinyin": "yiyang",
+      "name": "\u76ca\u9633",
+      "id": "329"
+    },
+    {
+      "longitude": 113.128959,
+      "latitude": 29.357104,
+      "pinyin": "yueyang",
+      "name": "\u5cb3\u9633",
+      "id": "324"
+    },
+    {
+      "longitude": 110.164756,
+      "latitude": 22.636379,
+      "pinyin": "yulingx",
+      "name": "\u7389\u6797",
+      "id": "311"
+    },
+    {
+      "longitude": 109.735209,
+      "latitude": 38.285526,
+      "pinyin": "yulinsx",
+      "name": "\u6986\u6797",
+      "id": "425"
+    },
+    {
+      "longitude": 111.007324,
+      "latitude": 35.026372,
+      "pinyin": "yuncheng",
+      "name": "\u8fd0\u57ce",
+      "id": "395"
+    },
+    {
+      "longitude": 112.044491,
+      "latitude": 22.915094,
+      "pinyin": "yunfu",
+      "name": "\u4e91\u6d6e",
+      "id": "1976"
+    },
+    {
+      "longitude": 102.546543,
+      "latitude": 24.352036,
+      "pinyin": "yuxi",
+      "name": "\u7389\u6eaa",
+      "id": "435"
+    },
+    {
+      "longitude": 117.323725,
+      "latitude": 34.810488,
+      "pinyin": "zaozhuang",
+      "name": "\u67a3\u5e84",
+      "id": "405"
+    },
+    {
+      "longitude": 113.837658,
+      "latitude": 23.289339,
+      "pinyin": "zengcheng",
+      "name": "\u589e\u57ce",
+      "id": "299"
+    },
+    {
+      "longitude": 120.555821,
+      "latitude": 31.875428,
+      "pinyin": "zhangjiagang",
+      "name": "\u5f20\u5bb6\u6e2f",
+      "id": "362"
+    },
+    {
+      "longitude": 110.479221,
+      "latitude": 29.116525,
+      "pinyin": "zhangjiajie",
+      "name": "\u5f20\u5bb6\u754c",
+      "id": "330"
+    },
+    {
+      "longitude": 114.886037,
+      "latitude": 40.767446,
+      "pinyin": "zhangjiakou",
+      "name": "\u5f20\u5bb6\u53e3",
+      "id": "1989"
+    },
+    {
+      "longitude": 117.647363,
+      "latitude": 24.513321,
+      "pinyin": "zhangzhou",
+      "name": "\u6f33\u5dde",
+      "id": "281"
+    },
+    {
+      "longitude": 110.359255,
+      "latitude": 21.270764,
+      "pinyin": "zhanjiang",
+      "name": "\u6e5b\u6c5f",
+      "id": "261"
+    },
+    {
+      "longitude": 112.465091,
+      "latitude": 23.047192,
+      "pinyin": "zhaoqing",
+      "name": "\u8087\u5e86",
+      "id": "286"
+    },
+    {
+      "longitude": 113.624899,
+      "latitude": 34.746985,
+      "pinyin": "zhengzhou",
+      "name": "\u90d1\u5dde",
+      "flag":1,
+      "id": "25"
+    },
+    {
+      "longitude": 119.45722,
+      "latitude": 32.199147,
+      "pinyin": "zhenjiang",
+      "name": "\u9547\u6c5f",
+      "id": "355"
+    },
+    {
+      "longitude": 113.392795,
+      "latitude": 22.516686,
+      "pinyin": "zhongshan",
+      "name": "\u4e2d\u5c71",
+      "id": "252"
+    },
+    {
+      "longitude": 105.173837,
+      "latitude": 37.51679,
+      "pinyin": "zhongwei",
+      "name": "\u4e2d\u536b",
+      "id": "2172"
+    },
+    {
+      "longitude": 114.657659,
+      "latitude": 33.618757,
+      "pinyin": "zhoukou",
+      "name": "\u5468\u53e3",
+      "id": "1993"
+    },
+    {
+      "longitude": 122.206604,
+      "latitude": 29.985451,
+      "pinyin": "zhoushan",
+      "name": "\u821f\u5c71",
+      "id": "441"
+    },
+    {
+      "longitude": 113.576726,
+      "latitude": 22.270715,
+      "pinyin": "zhuhai",
+      "name": "\u73e0\u6d77",
+      "id": "63"
+    },
+    {
+      "longitude": 114.022298,
+      "latitude": 33.011385,
+      "pinyin": "zhumadian",
+      "name": "\u9a7b\u9a6c\u5e97",
+      "id": "2055"
+    },
+    {
+      "longitude": 115.974365,
+      "latitude": 39.485284,
+      "pinyin": "zhuozhou",
+      "name": "\u6dbf\u5dde",
+      "id": "317"
+    },
+    {
+      "longitude": 113.133775,
+      "latitude": 27.827827,
+      "pinyin": "zhuzhou",
+      "name": "\u682a\u6d32",
+      "id": "250"
+    },
+    {
+      "longitude": 118.055007,
+      "latitude": 36.813497,
+      "pinyin": "zibo",
+      "name": "\u6dc4\u535a",
+      "id": "31"
+    },
+    {
+      "longitude": 104.77826,
+      "latitude": 29.33903,
+      "pinyin": "zigong",
+      "name": "\u81ea\u8d21",
+      "id": "2108"
+    },
+    {
+      "longitude": 104.627636,
+      "latitude": 30.128892,
+      "pinyin": "ziyang",
+      "name": "\u8d44\u9633",
+      "id": "2206"
+    },
+    {
+      "longitude": 117.96591,
+      "latitude": 40.189192,
+      "pinyin": "zunhua",
+      "name": "\u9075\u5316",
+      "id": "320"
+    },
+    {
+      "longitude": 106.927389,
+      "latitude": 27.725654,
+      "pinyin": "zunyi",
+      "name": "\u9075\u4e49",
+      "id": "302"
+    }
+  ]
+}

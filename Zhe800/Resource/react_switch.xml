@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <controller url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/359a7aa6f759008169dc9774dbf99399.BZMUMain.js"
+                windowKey="1001" desc="优品汇" switch="on">
+        <intent-filter>
+            <url scheme="http" host="th5.m.zhe800.com" path="/h5public/youpinhui"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="dcurlid" to="dcurlid"/>
+            <param from="pub_page_from" to="page_from"/>
+            <param from="p_refer" to="p_refer"/>
+        </params-map>
+    </controller>
+    <controller url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/6ce68c2f0f71dbd95a4950f388b0dd48.BZMDMain.js"
+                windowKey="1001" desc="商品详情" switch="on">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/zdetail"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="zid" to="zid"/>
+        </params-map>
+    </controller>
+    <controller
+            url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/0a62fbb2fac77b45c7f245d975fc1c26.BZMHomeOperationActivity.js"
+            windowKey="1001" desc="首页" switch="on">
+        <intent-filter>
+            <url scheme="http" host="m.zhe800.com" path="/mid/r_home"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+    </controller>
+
+    <controller
+            url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/22e4b1597e108387410e1c032a38c100.BZMCartMain.js"
+            windowKey="1001" desc="购物车" switch="on">
+        <intent-filter>
+            <url scheme="http" host="th5.m.zhe800.com" path="/h5/cart/list/my"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="version" to="version"/>
+            <param from="nnav" to="nnav"/>
+        </params-map>
+    </controller>
+    <controller
+            url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/b1d62f70702a8137a61b794a3c2b4c07.BZMCartInvalidGMain.js"
+            windowKey="1001" desc="失效商品" switch="on">
+        <intent-filter>
+            <url scheme="http" host="th5.m.zhe800.com" path="/h5/cart/exp/my"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="invalidItemList" to="invalidItemList"/>
+        </params-map>
+    </controller>
+    <controller
+            url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/2a95086d8420e1bfc78d0498eec2b075.BZMCartCouDan.js"
+            windowKey="1001" desc="凑单" switch="on">
+        <intent-filter>
+            <url scheme="http" host="th5.m.zhe800.com" path="/h5/coudan/index"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="sellerId" to="sellerId"/>
+            <param from="nickName" to="nickName"/>
+            <param from="pub_page_from" to="pub_page_from"/>
+            <param from="p_refer" to="p_refer"/>
+            <param from="sku_color" to="sku_color"/>
+        </params-map>
+    </controller>
+    <controller
+            url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/22e4b1597e108387410e1c032a38c100.BZMCartMain.js"
+            windowKey="1001" desc="完成凑单" switch="on">
+        <intent-filter>
+            <url scheme="http" host="th5.m.zhe800.com" path="/h5/coudan/list"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="sellerId" to="sellerId"/>
+        </params-map>
+    </controller>
+    <controller
+            url="http://i0.tuanimg.com/cs/zhe800rapp/bundle_f/b9005cc5e5e91944d1da9e0e842ef59c.BZMDCommentList.js"
+            windowKey="1001" desc="详情用户评价" switch="on">
+        <intent-filter>
+            <url scheme="http" host="th5.m.zhe800.com" path="/h5/comment/list"/>
+            <url scheme="zhe800"/>
+        </intent-filter>
+        <params-map>
+            <param from="zid" to="zid"/>
+            <param from="is_Yph" to="is_Yph"/>
+            <param from="promise_id" to="promise_id"/>
+        </params-map>
+    </controller>
+</manifest>

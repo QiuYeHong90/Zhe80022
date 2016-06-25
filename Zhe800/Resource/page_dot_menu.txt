@@ -1,0 +1,53 @@
+{
+"page": {
+"mymessage": {
+"label": "消息",
+"scheme": "zhe800://m.zhe800.com/mid/account/mcenter",
+"icon": "http://i0.tuanimg.com/cs/zhe800rapp/img/z_icon/z_account_mcenter.png",
+"checkLogin": true,
+"index":2
+},
+"home": {
+"label": "首页",
+"scheme": "zhe800://goto_home",
+"icon": "http://i0.tuanimg.com/cs/zhe800rapp/img/z_icon/z_home.png",
+"checkLogin": false,
+"index":3
+},
+"footprint": {
+"label": "足迹",
+"scheme": "zhe800://m.zhe800.com/mid/account/history",
+"icon": "http://i0.tuanimg.com/cs/zhe800rapp/img/z_icon/z_account_history.png",
+"checkLogin": false,
+"index":4
+}
+},
+"urls": {
+"orderList": {
+"url": "http://th5.m.zhe800.com/orders/h5/get_order_list",
+"posType":"myord"
+},
+"commentBad": {
+"url": "http://th5.m.zhe800.com/h5/comment/bad",
+"posType":"evaluate"
+},
+"commentGood": {
+"url": "http://th5.m.zhe800.com/h5/comment/good",
+"posType":"evaluate"
+}
+},
+"menu": [
+{
+"url": [
+"orderList",
+"commentBad",
+"commentGood"
+],
+"page": [
+"mymessage",
+"home",
+"footprint"
+]
+}
+]
+}

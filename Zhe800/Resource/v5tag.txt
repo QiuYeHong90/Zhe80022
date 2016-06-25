@@ -1,0 +1,354 @@
+[
+  {
+    "id": 1,
+    "tag_id": 1,
+    "parent_url_name": "",
+    "category_name": "8块8包邮",
+    "url_name": "baoyou",
+    "category_desc": "汇集独家特约【淘宝网2-5折商品】，以天天有9块9包邮、九块九元包邮的超值宝贝著名，价格足够低，找独家淘宝商城折扣，请到折800网。【9.9包邮 天天有】"
+  },
+  {
+    "id": 2,
+    "tag_id": 2,
+    "parent_url_name": "",
+    "category_name": "20元封顶",
+    "url_name": "fengding",
+    "category_desc": "汇集独家特约【淘宝网2-5折商品】，天天有新款，20元封顶，更有19.9包邮十九块九元包邮限时抢购，先到先得。找独家淘宝商城折扣，请到折800网。"
+  },
+  {
+    "id": 999,
+    "tag_id": 2,
+    "parent_url_name": "",
+    "category_name": "女装",
+    "url_name": "taofushi",
+    "category_desc": ""
+  },
+  {
+    "id": 997,
+    "tag_id": 11,
+    "parent_url_name": "",
+    "category_name": "男装",
+    "url_name": "taonanzhuang",
+    "category_desc": ""
+  },
+  {
+    "id": 995,
+    "tag_id": 7,
+    "parent_url_name": "",
+    "category_name": "居家",
+    "url_name": "taojujia",
+    "category_desc": ""
+  },
+  {
+    "id": 981,
+    "tag_id": 6,
+    "parent_url_name": "",
+    "category_name": "美食",
+    "url_name": "taomeishi",
+    "category_desc": ""
+  },
+  {
+    "id": 925,
+    "tag_id": 160,
+    "parent_url_name": "muying",
+    "category_name": "婴幼服饰",
+    "url_name": "yingyoufushi",
+    "category_desc": "婴幼服饰"
+  },
+  {
+    "id": 917,
+    "tag_id": 15,
+    "parent_url_name": "muying",
+    "category_name": "孕妈必备",
+    "url_name": "yunmabibei",
+    "category_desc": "孕妈必备"
+  },
+  {
+    "id": 921,
+    "tag_id": 21,
+    "parent_url_name": "muying",
+    "category_name": "早教玩具",
+    "url_name": "zaojiaowanju",
+    "category_desc": "早教玩具"
+  },
+  {
+    "id": 919,
+    "tag_id": 17,
+    "parent_url_name": "muying",
+    "category_name": "婴幼食品",
+    "url_name": "yingyoushipin",
+    "category_desc": "婴幼食品"
+  },
+  {
+    "id": 987,
+    "tag_id": 4,
+    "parent_url_name": "",
+    "category_name": "鞋包",
+    "url_name": "taoxiebao",
+    "category_desc": ""
+  },
+  {
+    "id": 983,
+    "tag_id": 12,
+    "parent_url_name": "",
+    "category_name": "配饰",
+    "url_name": "taopeishi",
+    "category_desc": ""
+  },
+  {
+    "id": 977,
+    "tag_id": 5,
+    "parent_url_name": "",
+    "category_name": "数码家电",
+    "url_name": "taodianqi",
+    "category_desc": ""
+  },
+  {
+    "id": 979,
+    "tag_id": 3,
+    "parent_url_name": "",
+    "category_name": "化妆品",
+    "url_name": "taomeizhuang",
+    "category_desc": ""
+  },
+  {
+    "id": 975,
+    "tag_id": 9,
+    "parent_url_name": "",
+    "category_name": "文体",
+    "url_name": "taoqita",
+    "category_desc": ""
+  },
+  {
+    "id": 993,
+    "tag_id": 990,
+    "parent_url_name": "taomuying",
+    "category_name": "童装",
+    "url_name": "tongzhuang",
+    "category_desc": ""
+  },
+  {
+    "id": 991,
+    "tag_id": 8,
+    "parent_url_name": "",
+    "category_name": "母婴",
+    "url_name": "muying",
+    "category_desc": ""
+  },
+  {
+    "id": 989,
+    "tag_id": 992,
+    "parent_url_name": "taomuying",
+    "category_name": "童鞋",
+    "url_name": "tongxie",
+    "category_desc": ""
+  },
+  {
+    "id": 985,
+    "tag_id": 998,
+    "parent_url_name": "taomuying",
+    "category_name": "婴幼穿着",
+    "url_name": "chuanzhuo",
+    "category_desc": ""
+  },
+  {
+    "id": 973,
+    "tag_id": 386,
+    "parent_url_name": "",
+    "category_name": "中老年",
+    "url_name": "taoold",
+    "category_desc": ""
+  },
+  {
+    "id": 971,
+    "tag_id": 382,
+    "parent_url_name": "taofushi",
+    "category_name": "套装",
+    "url_name": "qita",
+    "category_desc": ""
+  },
+  {
+    "id": 969,
+    "tag_id": 380,
+    "parent_url_name": "taofushi",
+    "category_name": "内衣",
+    "url_name": "neiyi",
+    "category_desc": ""
+  },
+  {
+    "id": 967,
+    "tag_id": 378,
+    "parent_url_name": "taofushi",
+    "category_name": "裤裙",
+    "url_name": "kuqun",
+    "category_desc": ""
+  },
+  {
+    "id": 965,
+    "tag_id": 376,
+    "parent_url_name": "taofushi",
+    "category_name": "上衣",
+    "url_name": "shangyi",
+    "category_desc": ""
+  },
+  {
+    "id": 963,
+    "tag_id": 374,
+    "parent_url_name": "taoxiebao",
+    "category_name": "箱包",
+    "url_name": "xiangbao",
+    "category_desc": ""
+  },
+  {
+    "id": 961,
+    "tag_id": 372,
+    "parent_url_name": "taoxiebao",
+    "category_name": "鞋品",
+    "url_name": "xiepin",
+    "category_desc": ""
+  },
+  {
+    "id": 959,
+    "tag_id": 966,
+    "parent_url_name": "taodianqi",
+    "category_name": "生活家电",
+    "url_name": "shenghuojiadian",
+    "category_desc": ""
+  },
+  {
+    "id": 957,
+    "tag_id": 962,
+    "parent_url_name": "taodianqi",
+    "category_name": "数码周边",
+    "url_name": "shumazhoubian",
+    "category_desc": ""
+  },
+  {
+    "id": 955,
+    "tag_id": 964,
+    "parent_url_name": "taodianqi",
+    "category_name": "手机配件",
+    "url_name": "shoujipeijian",
+    "category_desc": ""
+  },
+  {
+    "id": 953,
+    "tag_id": 982,
+    "parent_url_name": "taojujia",
+    "category_name": "家具建材",
+    "url_name": "jiajujiancai",
+    "category_desc": ""
+  },
+  {
+    "id": 951,
+    "tag_id": 980,
+    "parent_url_name": "taojujia",
+    "category_name": "厨房卫浴",
+    "url_name": "chufangweiyu",
+    "category_desc": ""
+  },
+  {
+    "id": 949,
+    "tag_id": 978,
+    "parent_url_name": "taojujia",
+    "category_name": "居家百货",
+    "url_name": "jujiabaihuo",
+    "category_desc": ""
+  },
+  {
+    "id": 947,
+    "tag_id": 976,
+    "parent_url_name": "taojujia",
+    "category_name": "布艺软饰",
+    "url_name": "buyiruanshi",
+    "category_desc": ""
+  },
+  {
+    "id": 945,
+    "tag_id": 994,
+    "parent_url_name": "taomuying",
+    "category_name": "玩具/学习",
+    "url_name": "wanju",
+    "category_desc": ""
+  },
+  {
+    "id": 943,
+    "tag_id": 996,
+    "parent_url_name": "taomuying",
+    "category_name": "婴幼用品",
+    "url_name": "yongpin",
+    "category_desc": ""
+  },
+  {
+    "id": 941,
+    "tag_id": 1000,
+    "parent_url_name": "taomuying",
+    "category_name": "孕妈必备",
+    "url_name": "yunma",
+    "category_desc": ""
+  },
+  {
+    "id": 939,
+    "tag_id": 988,
+    "parent_url_name": "taoqita",
+    "category_name": "户外",
+    "url_name": "huwai",
+    "category_desc": ""
+  },
+  {
+    "id": 937,
+    "tag_id": 986,
+    "parent_url_name": "taoqita",
+    "category_name": "车品",
+    "url_name": "chepin",
+    "category_desc": ""
+  },
+  {
+    "id": 935,
+    "tag_id": 984,
+    "parent_url_name": "taoqita",
+    "category_name": "文娱",
+    "url_name": "wenyu",
+    "category_desc": ""
+  },
+  {
+    "id": 933,
+    "tag_id": 974,
+    "parent_url_name": "taopeishi",
+    "category_name": "其他配饰",
+    "url_name": "qitapeishi",
+    "category_desc": ""
+  },
+  {
+    "id": 931,
+    "tag_id": 972,
+    "parent_url_name": "taopeishi",
+    "category_name": "服装配饰",
+    "url_name": "fuzhuangpeishi",
+    "category_desc": ""
+  },
+  {
+    "id": 929,
+    "tag_id": 970,
+    "parent_url_name": "taopeishi",
+    "category_name": "流行饰品",
+    "url_name": "liuxingshipin",
+    "category_desc": ""
+  },
+  {
+    "id": 927,
+    "tag_id": 968,
+    "parent_url_name": "taopeishi",
+    "category_name": "珠宝手表",
+    "url_name": "zhubaoshoubiao",
+    "category_desc": ""
+  },
+  {
+    "id": 923,
+    "tag_id": 162,
+    "parent_url_name": "muying",
+    "category_name": "婴幼用品",
+    "url_name": "yingyouyongp",
+    "category_desc": "婴幼用品"
+  }
+]
