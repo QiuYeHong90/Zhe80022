@@ -8,6 +8,7 @@
 #define YSHCOLOR(r,g,b,a)    colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:(a)
 #import "YSHNavSearchView.h"
 #import "YSHHeader.h"
+#import "UIView+ImageWihtColor.h"
 @implementation YSHNavSearchView
 
 /*
@@ -38,10 +39,16 @@
         _block = block;
         UIButton * btn = [[UIButton alloc]initWithFrame:frame];
         [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        /// - (UIImage*) createImageWithColor: (UIColor*) color
+        [btn setBackgroundImage:[btn ImageFromColor:[UIColor redColor]] forState:UIControlStateHighlighted];
+        
         [self addSubview:btn];
     }
     return self;
 }
+
+
 -(void)btnClick{
     [self.delegate btnClickSearchView:self];
 }

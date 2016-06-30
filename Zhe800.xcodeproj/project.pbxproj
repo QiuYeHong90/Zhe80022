@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04025D021D23676D00F0350E /* UpImageDownLabCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04025D001D23676D00F0350E /* UpImageDownLabCollectionViewCell.m */; };
 		04025D031D23676D00F0350E /* UpImageDownLabCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04025D011D23676D00F0350E /* UpImageDownLabCollectionViewCell.xib */; };
+		0407CA601D24CF6300114B01 /* UIView+ImageWihtColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407CA5F1D24CF6300114B01 /* UIView+ImageWihtColor.m */; };
 		04177F6E1D1D6EF00049E723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04177F6D1D1D6EF00049E723 /* main.m */; };
 		04177F711D1D6EF00049E723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04177F701D1D6EF00049E723 /* AppDelegate.m */; };
 		04177F791D1D6EF00049E723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04177F781D1D6EF00049E723 /* Assets.xcassets */; };
@@ -1815,6 +1816,8 @@
 		04025CFF1D23676D00F0350E /* UpImageDownLabCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpImageDownLabCollectionViewCell.h; sourceTree = "<group>"; };
 		04025D001D23676D00F0350E /* UpImageDownLabCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpImageDownLabCollectionViewCell.m; sourceTree = "<group>"; };
 		04025D011D23676D00F0350E /* UpImageDownLabCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpImageDownLabCollectionViewCell.xib; sourceTree = "<group>"; };
+		0407CA5E1D24CF6300114B01 /* UIView+ImageWihtColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ImageWihtColor.h"; sourceTree = "<group>"; };
+		0407CA5F1D24CF6300114B01 /* UIView+ImageWihtColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ImageWihtColor.m"; sourceTree = "<group>"; };
 		04177F691D1D6EF00049E723 /* Zhe800.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhe800.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04177F6D1D1D6EF00049E723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04177F6F1D1D6EF00049E723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -3783,6 +3786,8 @@
 				04991FE31D22638B00C1324C /* UIColor+String.m */,
 				04991FE51D226DF600C1324C /* NSString+big.h */,
 				04991FE61D226DF700C1324C /* NSString+big.m */,
+				0407CA5E1D24CF6300114B01 /* UIView+ImageWihtColor.h */,
+				0407CA5F1D24CF6300114B01 /* UIView+ImageWihtColor.m */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -7705,6 +7710,7 @@
 				04991FDD1D22461600C1324C /* SHOPCouponInfos.m in Sources */,
 				04295D841D1E7194003FDBAF /* LogViewController.m in Sources */,
 				04295D7B1D1E567D003FDBAF /* YSHNavSearchView.m in Sources */,
+				0407CA601D24CF6300114B01 /* UIView+ImageWihtColor.m in Sources */,
 				04991FFF1D22BB5000C1324C /* STOREMeta.m in Sources */,
 				04991FFE1D22BB5000C1324C /* STOREImageUrl.m in Sources */,
 				04025D021D23676D00F0350E /* UpImageDownLabCollectionViewCell.m in Sources */,
