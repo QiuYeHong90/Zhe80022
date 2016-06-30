@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubCollectionViewCell" id="hMx-9e-GdH" customClass="SubCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="1080" height="516"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="1080" height="516"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rl2-NM-YAf">
+                        <rect key="frame" x="0.0" y="0.0" width="448" height="516"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Rl2-NM-YAf" secondAttribute="height" multiplier="112:129" id="mlq-S3-yHA"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eHz-NL-vpj">
+                        <rect key="frame" x="452" y="0.0" width="628" height="256"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXq-w9-Skz">
+                        <rect key="frame" x="452" y="260" width="628" height="256"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Rl2-NM-YAf" firstAttribute="top" secondItem="hMx-9e-GdH" secondAttribute="top" id="1uN-Q1-wA0"/>
+                <constraint firstAttribute="trailing" secondItem="eHz-NL-vpj" secondAttribute="trailing" id="9ax-DJ-8R1"/>
+                <constraint firstItem="eHz-NL-vpj" firstAttribute="leading" secondItem="Rl2-NM-YAf" secondAttribute="trailing" constant="4" id="BVO-gE-nVQ"/>
+                <constraint firstAttribute="bottom" secondItem="Rl2-NM-YAf" secondAttribute="bottom" id="IJa-3v-ZF9"/>
+                <constraint firstItem="eHz-NL-vpj" firstAttribute="top" secondItem="hMx-9e-GdH" secondAttribute="top" id="KzO-Q6-qCo"/>
+                <constraint firstAttribute="trailing" secondItem="IXq-w9-Skz" secondAttribute="trailing" id="YN6-ge-wIa"/>
+                <constraint firstAttribute="bottom" secondItem="IXq-w9-Skz" secondAttribute="bottom" id="jcy-cx-MRG"/>
+                <constraint firstItem="IXq-w9-Skz" firstAttribute="width" secondItem="eHz-NL-vpj" secondAttribute="width" id="llc-B1-2km"/>
+                <constraint firstItem="IXq-w9-Skz" firstAttribute="top" secondItem="eHz-NL-vpj" secondAttribute="bottom" constant="4" id="nIG-pe-UOm"/>
+                <constraint firstItem="Rl2-NM-YAf" firstAttribute="leading" secondItem="hMx-9e-GdH" secondAttribute="leading" id="vkN-j1-yzr"/>
+                <constraint firstItem="IXq-w9-Skz" firstAttribute="height" secondItem="eHz-NL-vpj" secondAttribute="height" id="wgZ-wb-axN"/>
+            </constraints>
+            <size key="customSize" width="567" height="330"/>
+            <point key="canvasLocation" x="414" y="184"/>
+        </collectionViewCell>
+    </objects>
+</document>

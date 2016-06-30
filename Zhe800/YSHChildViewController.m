@@ -21,6 +21,7 @@
         case 0:
         {
             self.view.backgroundColor = [UIColor redColor];
+            
         }
             break;
         case 1:

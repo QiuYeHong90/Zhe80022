@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface YSHCollectionViewFlowLayout : UICollectionViewFlowLayout
-
+// 商品数据数组
+@property (nonatomic, assign)NSInteger shopList;
 @end

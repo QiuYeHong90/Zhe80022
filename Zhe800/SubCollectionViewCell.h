@@ -10,4 +10,6 @@
 
 @interface SubCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic,strong)NSMutableArray * dataArray;
 @end

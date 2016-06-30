@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YSHCollectionViewCell : UICollectionViewCell<UICollectionViewDataSource,UICollectionViewDelegate>
-@property (nonatomic,assign ) int index;
+@interface YSHCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic,strong) UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic,strong)NSArray * dataArray;
 @end

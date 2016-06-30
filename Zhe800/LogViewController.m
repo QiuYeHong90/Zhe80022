@@ -4,7 +4,8 @@
 //
 //  Created by Darius_mac on 16/6/25.
 //  Copyright © 2016年 ZhiYou. All rights reserved.
-//
+///Users/mac/Desktop/Zhe800/Zhe800/Resource/Icon-72.png
+///Users/mac/Desktop/Zhe800/Zhe800/Resource/Icon-72@2x.png
 
 #import "LogViewController.h"
 
