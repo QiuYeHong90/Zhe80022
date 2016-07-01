@@ -6,10 +6,24 @@
 //  Copyright © 2016年 ZhiYou. All rights reserved.
 //
 
+
+
 #import <UIKit/UIKit.h>
+#import <SDCycleScrollView.h>
 
-@interface YSHCollectionViewCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+typedef void(^BlockClick)(NSInteger);
+
+@interface YSHCollectionViewCell : UICollectionViewCell<SDCycleScrollViewDelegate>
+
+
+
+@property (weak, nonatomic) IBOutlet SDCycleScrollView *scrollView;
 @property (nonatomic,strong)NSArray * dataArray;
+
+@property (nonatomic,copy) BlockClick block;
+
+@property (nonatomic,assign) NSInteger page;
 @end
+
+

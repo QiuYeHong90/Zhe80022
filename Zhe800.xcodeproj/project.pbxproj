@@ -10,6 +10,9 @@
 		04025D021D23676D00F0350E /* UpImageDownLabCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04025D001D23676D00F0350E /* UpImageDownLabCollectionViewCell.m */; };
 		04025D031D23676D00F0350E /* UpImageDownLabCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04025D011D23676D00F0350E /* UpImageDownLabCollectionViewCell.xib */; };
 		0407CA601D24CF6300114B01 /* UIView+ImageWihtColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407CA5F1D24CF6300114B01 /* UIView+ImageWihtColor.m */; };
+		0407CACA1D2655BB00114B01 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407CAC91D2655BB00114B01 /* TitleView.m */; };
+		0407CACD1D265CFB00114B01 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407CACC1D265CFB00114B01 /* BGView.m */; };
+		0407CAD01D26B0EC00114B01 /* YSTopTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407CACF1D26B0EC00114B01 /* YSTopTitleScrollView.m */; };
 		04177F6E1D1D6EF00049E723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04177F6D1D1D6EF00049E723 /* main.m */; };
 		04177F711D1D6EF00049E723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04177F701D1D6EF00049E723 /* AppDelegate.m */; };
 		04177F791D1D6EF00049E723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04177F781D1D6EF00049E723 /* Assets.xcassets */; };
@@ -1818,6 +1821,12 @@
 		04025D011D23676D00F0350E /* UpImageDownLabCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpImageDownLabCollectionViewCell.xib; sourceTree = "<group>"; };
 		0407CA5E1D24CF6300114B01 /* UIView+ImageWihtColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ImageWihtColor.h"; sourceTree = "<group>"; };
 		0407CA5F1D24CF6300114B01 /* UIView+ImageWihtColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ImageWihtColor.m"; sourceTree = "<group>"; };
+		0407CAC81D2655BB00114B01 /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
+		0407CAC91D2655BB00114B01 /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
+		0407CACB1D265CFB00114B01 /* BGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
+		0407CACC1D265CFB00114B01 /* BGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
+		0407CACE1D26B0EC00114B01 /* YSTopTitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSTopTitleScrollView.h; sourceTree = "<group>"; };
+		0407CACF1D26B0EC00114B01 /* YSTopTitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSTopTitleScrollView.m; sourceTree = "<group>"; };
 		04177F691D1D6EF00049E723 /* Zhe800.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhe800.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04177F6D1D1D6EF00049E723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04177F6F1D1D6EF00049E723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -3689,6 +3698,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0407CA651D25FD1D00114B01 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				04178D501D1D89F40049E723 /* ClassViewController.h */,
+				04178D511D1D89F40049E723 /* ClassViewController.m */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+		0407CAC71D26559600114B01 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0407CAC81D2655BB00114B01 /* TitleView.h */,
+				0407CAC91D2655BB00114B01 /* TitleView.m */,
+				0407CACB1D265CFB00114B01 /* BGView.h */,
+				0407CACC1D265CFB00114B01 /* BGView.m */,
+				0407CACE1D26B0EC00114B01 /* YSTopTitleScrollView.h */,
+				0407CACF1D26B0EC00114B01 /* YSTopTitleScrollView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		04177F601D1D6EEE0049E723 = {
 			isa = PBXGroup;
 			children = (
@@ -3743,10 +3774,9 @@
 				04178D571D1D8B3B0049E723 /* PersonalViewController.m */,
 				04178D581D1D8B3B0049E723 /* ShoppingCartViewController.h */,
 				04178D591D1D8B3B0049E723 /* ShoppingCartViewController.m */,
-				04178D501D1D89F40049E723 /* ClassViewController.h */,
 				04178D531D1D8ACD0049E723 /* GroupViewController.h */,
 				04178D541D1D8ACD0049E723 /* GroupViewController.m */,
-				04178D511D1D89F40049E723 /* ClassViewController.m */,
+				0407CA651D25FD1D00114B01 /* class */,
 				04295D7D1D1E6ADD003FDBAF /* Home */,
 				04295D731D1E4380003FDBAF /* SearchReaultViewController.h */,
 				04295D741D1E4380003FDBAF /* SearchReaultViewController.m */,
@@ -3764,8 +3794,6 @@
 		04177F941D1D712B0049E723 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				04295D8A1D1E81FF003FDBAF /* UIView+YMExtension.h */,
-				04295D8B1D1E81FF003FDBAF /* UIView+YMExtension.m */,
 				04177F951D1D716C0049E723 /* MainViewController.h */,
 				04177F961D1D716C0049E723 /* MainViewController.m */,
 				04295D6B1D1E13AF003FDBAF /* YSHNavgationController.h */,
@@ -3780,6 +3808,8 @@
 		04177FA41D1D7E180049E723 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				04295D8A1D1E81FF003FDBAF /* UIView+YMExtension.h */,
+				04295D8B1D1E81FF003FDBAF /* UIView+YMExtension.m */,
 				04343D521D21423D00E339F3 /* Tool.h */,
 				04343D531D21423D00E339F3 /* Tool.m */,
 				04991FE21D22638A00C1324C /* UIColor+String.h */,
@@ -5658,6 +5688,7 @@
 		04295D7D1D1E6ADD003FDBAF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0407CAC71D26559600114B01 /* view */,
 				04178D4D1D1D89E50049E723 /* FirstViewController.h */,
 				04178D4E1D1D89E50049E723 /* FirstViewController.m */,
 				04295D921D1EA20D003FDBAF /* YSHChildViewController.h */,
@@ -7679,6 +7710,7 @@
 				04644FBA1D1F83D0007DB9F6 /* SelectionCollectionViewCell.m in Sources */,
 				04295D951D1EA20D003FDBAF /* YSHChildViewController.m in Sources */,
 				04644FB91D1F83D0007DB9F6 /* PresentCollectionViewCell.m in Sources */,
+				0407CAD01D26B0EC00114B01 /* YSTopTitleScrollView.m in Sources */,
 				04295D9E1D1EBA56003FDBAF /* SubCollectionViewCell.m in Sources */,
 				04644FBE1D1F84A0007DB9F6 /* MBProgressHUD.m in Sources */,
 				04178D5B1D1D8B3B0049E723 /* ShoppingCartViewController.m in Sources */,
@@ -7702,6 +7734,7 @@
 				04295D801D1E6B04003FDBAF /* SearchViewController.m in Sources */,
 				04991FFB1D22BB5000C1324C /* STOREBase.m in Sources */,
 				04177F711D1D6EF00049E723 /* AppDelegate.m in Sources */,
+				0407CACA1D2655BB00114B01 /* TitleView.m in Sources */,
 				04991FDC1D22461600C1324C /* SHOPConfigInfo.m in Sources */,
 				04177F971D1D716C0049E723 /* MainViewController.m in Sources */,
 				04295D881D1E7619003FDBAF /* YSHTopView.m in Sources */,
@@ -7712,6 +7745,7 @@
 				04295D7B1D1E567D003FDBAF /* YSHNavSearchView.m in Sources */,
 				0407CA601D24CF6300114B01 /* UIView+ImageWihtColor.m in Sources */,
 				04991FFF1D22BB5000C1324C /* STOREMeta.m in Sources */,
+				0407CACD1D265CFB00114B01 /* BGView.m in Sources */,
 				04991FFE1D22BB5000C1324C /* STOREImageUrl.m in Sources */,
 				04025D021D23676D00F0350E /* UpImageDownLabCollectionViewCell.m in Sources */,
 				04295D751D1E4380003FDBAF /* SearchReaultViewController.m in Sources */,

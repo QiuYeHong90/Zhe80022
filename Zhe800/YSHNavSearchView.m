@@ -37,11 +37,12 @@
 //        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapView:)];
 //        [self addGestureRecognizer:tap];
         _block = block;
-        UIButton * btn = [[UIButton alloc]initWithFrame:frame];
+        UIButton * btn = [[UIButton alloc]initWithFrame:self.bounds];
         [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
         
         /// - (UIImage*) createImageWithColor: (UIColor*) color
-        [btn setBackgroundImage:[btn ImageFromColor:[UIColor redColor]] forState:UIControlStateHighlighted];
+//        [btn setBackgroundColor:[UIColor blueColor]];
+        [btn setBackgroundImage:[btn ImageFromColor:[UIColor yellowColor]] forState:UIControlStateHighlighted];
         
         [self addSubview:btn];
     }

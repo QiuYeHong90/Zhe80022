@@ -21,15 +21,19 @@
 
 #import "Tool.h"
 #import "DataModels.h"
-@interface FirstViewController ()<YSHNavSearchViewDelegate,UIScrollViewAccessibilityDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
+
+#import "BGView.h"
+#import "ClassViewController.h"
+@interface FirstViewController ()<YSHNavSearchViewDelegate,UIScrollViewAccessibilityDelegate,UICollectionViewDataSource,UICollectionViewDelegate,BGViewDelegate>
 {
     UISearchController * _searchController;
     BOOL _isPush;
     BOOL _isTap;
-    int currentIndex;
+    NSInteger currentIndex;
     
 }
-
+@property (nonatomic,strong) UIButton * rightButton;
+@property (nonatomic,strong) BGView *bgView ;
 @property (nonatomic,strong) NSMutableDictionary * PICDict;
 @end
 
@@ -263,6 +267,7 @@
     }
 }
 
+#pragma mark -- 顶部滚动视图的布局 
 ///布局顶部视图
 -(void)setupTitlesView {
     //标签栏
@@ -342,19 +347,72 @@
     [self.scrollView addSubview:self.indicatorViewScroll];
     
     ///左侧的button
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.scrollView.frame), 0,40, 36)];
-    [btn setImage:[UIImage imageNamed:@"muying_title_selected"] forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:@"muying_title_unselected"] forState:UIControlStateSelected];
-    [btn addTarget:self  action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.titlesView addSubview:btn];
+    UIButton * RightBtn = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.scrollView.frame), 0,40, 36)];
+    [RightBtn setImage:[UIImage imageNamed:@"muying_title_selected"] forState:UIControlStateNormal];
+    [RightBtn setImage:[UIImage imageNamed:@"muying_title_unselected"] forState:UIControlStateSelected];
+    [RightBtn addTarget:self  action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.titlesView addSubview:RightBtn];
+    self.rightButton = RightBtn;
 }
 ///TODO:顶部视图的左侧button点击事件
 -(void)btnClick:(UIButton*)btn
 {
     btn.selected = !btn.selected;
+    if (btn.selected == YES) {
+        
+        _bgView = [[BGView alloc]initWithFrame:CGRectMake(0,CGRectGetMaxY(self.titlesView.frame), self.view.width,self.view.height -self.titlesView.height+self.titlesView.y ) andArray:self.titleArray];
+        [self.view addSubview:_bgView];
+        _bgView.delegate = self;
+        _bgView.index = currentIndex;
+        [UIView animateWithDuration:0.25 animations:^{
+             _bgView.titleView.y = 0;
+        }];
+    }else{
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            _bgView.titleView.y = -_bgView.titleView.height;
+            _bgView.alpha = 0;
+        } completion:^(BOOL finished) {
+             [_bgView removeFromSuperview];
+        }];
+       
+    }
 }
+
+-(void)scrollToDistancePosionWithTag:(NSInteger)tag{
+    UIButton * button = self.btnArray[tag];
+    UIButton * lastBtn  = self.btnArray.lastObject;
+    CGFloat postX = 0;
+    if (CGRectGetMaxX(lastBtn.frame) - button.x > self.scrollView.width) {
+        postX = button.x;
+    }else{
+        postX = CGRectGetMaxX(lastBtn.frame) - self.scrollView.width;
+    }
+    [self.scrollView setContentOffset:CGPointMake(postX,0) animated:YES];
+}
+
+-(void)bgView:(BGView *)bgView CategoryBtnClick:(UIButton *)btn{
+     NSLog(@"btn.tag==%ld -- %@",btn.tag,self.titleArray[btn.tag]);
+     [self scrollToDistancePosionWithTag:btn.tag];
+    [self titleClick:self.btnArray[btn.tag]];
+    
+    [self btnClick:self.rightButton];
+    
+}
+-(void)bgView:(BGView *)bgView moreCategoryBtnClick:(UIButton *)btn{
+    NSLog(@"更多");
+    
+    self.tabBarController.selectedIndex = 1;
+     [self btnClick:self.rightButton];
+}
+-(void)cancelClickWithBgView:(BGView *)bgView{
+    [self btnClick:self.rightButton];
+}
+
 -(void)titleClick:(UIButton*)button
 {
+    currentIndex = button.tag;
+   
     //修改按钮状态
     _isTap = YES;
     self.selectedButton.enabled = YES;
@@ -379,7 +437,7 @@
     offset.x = button.tag* self.collectionView.width;
     [self.collectionView setContentOffset:offset animated:YES];
     //让标签执行动
-        
+    
     
     
 }

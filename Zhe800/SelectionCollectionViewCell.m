@@ -22,12 +22,16 @@
 
 #import "TowImageViewCell.h"
 
+
+
+#import <MJRefresh.h>
 //#import "RACollectionViewReorderableTripletLayout.h"
 
 #import "Tool.h"
 @interface SelectionCollectionViewCell()<UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
     NSInteger _currentPage;
+    BOOL _isLoad;
 }
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *presentArr;
@@ -48,17 +52,77 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
        
-        
+        _currentPage = 1;
         self.scrollDataArray = [[NSMutableArray alloc]init];
         self.dataArray = [[NSMutableArray alloc]init];
         self.shopListArray = [[NSMutableArray alloc]init];
-        
+        //获取scrollview 数组
         [self getData];
+        ///获取数据
         [self getCarouselData];
+        //创建collectionView
         [self createCollectionView];
+        [self addheader];
+        [self addFooter];
+        
     }return self;
     
 }
+
+- (void)addFooter {
+    
+    MJRefreshBackNormalFooter * backNormalFooter = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        _isLoad = YES;
+        _currentPage ++;
+        NSLog(@"===%ld",_currentPage);
+        [self getCarouselData];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2ull *NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            NSLog(@"===加载了");
+            
+            
+            [self.collectionView.footer endRefreshing];
+        });
+    }];
+    
+    backNormalFooter.arrowView.image  = [UIImage imageNamed:@"message_big_loading.png"];
+    self.collectionView.footer = backNormalFooter;
+    
+    
+}
+
+
+-(void)addheader{
+    MJRefreshGifHeader * gifHeader = [MJRefreshGifHeader headerWithRefreshingBlock:^{
+        NSLog(@"===刷新了");
+        _currentPage = 1 ;
+        [self getCarouselData];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3ull *NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            NSLog(@"===刷新了");
+            [self.collectionView.header endRefreshing];
+        });
+        
+    }];
+    NSMutableArray * mutImages = [NSMutableArray array];
+    for (int i =0; i<37; i++) {
+        UIImage * image = [UIImage imageNamed:[NSString stringWithFormat:@"refreshHeader_pig%d",i]];
+        [mutImages addObject:image];
+    }
+    
+    NSMutableArray * mutLoadImages = [NSMutableArray array];
+    for (int i = 1; i< 15; i++) {
+        UIImage * image = [UIImage imageNamed:[NSString stringWithFormat:@"refreshLoading_pig%d",i]];
+        [mutLoadImages addObject:image];
+    }
+    gifHeader.mj_h= 10+gifHeader.mj_h;
+    [gifHeader setImages:mutImages forState:MJRefreshStateIdle];
+    [gifHeader setImages:mutLoadImages duration:0.5  forState:MJRefreshStateRefreshing];
+    gifHeader.lastUpdatedTimeLabel.hidden = YES;
+    gifHeader.stateLabel.hidden = YES;
+    self.collectionView.header = gifHeader;
+    
+}
+
 - (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     [super applyLayoutAttributes:layoutAttributes];
     self.collectionView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
@@ -104,12 +168,18 @@
 - (void)getCarouselData {
      Tool * tool = [Tool managerTool];
     ///获取商品列表
-    _currentPage = 1;
+    
     ///http://m.api.zhe800.com/v5/deals?image_type=si3&image_model=webp&user_type=1&user_role=1&student=0&url_name=&super=2&deal_source=1&baoyou_type=1&show_config=1&page=1&per_page=20
     NSString * str = [NSString stringWithFormat:@"http://m.api.zhe800.com/v5/deals?image_type=si3&image_model=webp&user_type=1&user_role=1&student=0&url_name=&super=2&deal_source=1&baoyou_type=1&show_config=1&page=%ld&per_page=20",_currentPage];
     [tool getShopDataWithUrl:str Success:^(id responseObject) {
         SHOPBase * shopBase = responseObject;
-        [self.shopListArray setArray:shopBase.objects];
+        if (_isLoad == YES) {
+            _isLoad = NO;
+            [self.shopListArray addObjectsFromArray:shopBase.objects];
+        }else{
+            [self.shopListArray setArray:shopBase.objects];
+        }
+        
         [self.collectionView reloadData];
         
     } failure:^(NSError *error) {
@@ -242,7 +312,13 @@
     if (indexPath.section == 0) {
         
         YSHCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"YSHCollectionViewCell" forIndexPath:indexPath];
+        __weak typeof(self) weakSelf = self;
+        cell.block = ^(NSInteger index){
+            
+            NSLog(@"传代理协议=====%ld===%@",index,weakSelf.scrollDataArray[index]);
+        };
         cell.dataArray = self.scrollDataArray;
+        
         return cell;
     }else if(indexPath.section == 1) {
         ///d第一区
@@ -300,15 +376,39 @@
         
          SHOPObjects * object = self.shopListArray[indexPath.row];
         [cell setObject:object];
-
-        
-//        [cell.imageView sd_setImageWithURL:[NSURL URLWithString:str]];
         
         return cell;
     }
 
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.section) {
+        case 0:
+        {
+           YSHCollectionViewCell *yshCell  =(YSHCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
+            NSLog(@"===%ld",yshCell.page);
 
+        }
+            break;
+        case 1:
+        {
+             SCBAS * base = self.dataArray[indexPath.row];
+            NSLog(@"==%@",base.module[0]);
+        }
+            break;
+        case 2:
+        {
+            SHOPObjects * object = self.shopListArray[indexPath.row];
+            NSLog(@"==%@",object);
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+}
 
 @end

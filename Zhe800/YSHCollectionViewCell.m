@@ -16,15 +16,7 @@
 @implementation YSHCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
-        for (int i = 0; i<6; i++) {
-        UIImageView * imageView = [[UIImageView alloc]init];
-        [self.scrollView addSubview:imageView];
-            imageView.hidden = YES;
-    }
-    self.scrollView.pagingEnabled = YES;
-    self.scrollView.showsHorizontalScrollIndicator = NO;
-    self.scrollView.bounces = NO;
+    self.scrollView.delegate = self;
 }
 
 -(void)setDataArray:(NSArray *)dataArray
@@ -32,31 +24,34 @@
     _dataArray = nil;
     _dataArray =dataArray;
     if (_dataArray.count != 0) {
-        [self.scrollView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            obj.hidden = YES;
-           
-            if ([obj isKindOfClass:[UIImageView class]]) {
-                if (idx>dataArray.count-1) {
-                    obj.hidden = YES;
-                }else{
-                    obj.hidden = NO;
-                    UIImageView * imageView = (UIImageView *)obj;
-                    YSBase * base  = _dataArray[idx];
-                    NSString * str = [base.imageBigIosUrl componentsSeparatedByString:@".webp"][0];
-                    NSLog(@"imageViewstr===%@",str);
-                    [imageView sd_setImageWithURL:[NSURL URLWithString:str]];
-                    imageView.frame =CGRectMake(CGRectGetWidth(self.scrollView.frame)*idx,0, CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame));
-                }
-                
-                
-            }
+        
+        NSMutableArray * mutPicUrl = [NSMutableArray array];
+        [_dataArray enumerateObjectsUsingBlock:^(YSBase *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+              NSString * str = [obj.imageBigIosUrl componentsSeparatedByString:@".webp"][0];
+            [mutPicUrl addObject:str];
         }];
-         self.scrollView.contentSize = CGSizeMake(self.scrollView.width*dataArray.count, self.scrollView.height);
+    
+        
+        self.scrollView.imageURLStringsGroup = mutPicUrl;
+        self.scrollView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
+        self.scrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+       
     }
     
        
     
     
+}
+
+#pragma mark - SDCycleScrollViewDelegate
+
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+{
+    NSLog(@"我被点击了==%ld",index);
+    self.page = index;
+    if (self.block) {
+        self.block(index);
+    }
 }
 
 - (instancetype)initWithFrame:(CGRect)frame

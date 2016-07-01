@@ -29,7 +29,7 @@
             <connections>
                 <outlet property="imageView" destination="IGg-mX-DLj" id="VNu-7T-hep"/>
             </connections>
-            <point key="canvasLocation" x="295.5" y="313.5"/>
+            <point key="canvasLocation" x="98.5" y="79.5"/>
         </collectionViewCell>
     </objects>
 </document>

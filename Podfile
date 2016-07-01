@@ -3,4 +3,5 @@ target 'Zhe800' do
 pod 'AFNetworking', '~> 3.0.0-beta.1'
 pod 'SDWebImage', '~> 3.7.3'
 pod 'MJRefresh', '~> 2.4.12'
+pod 'SDCycleScrollView','~> 1.64'
 end

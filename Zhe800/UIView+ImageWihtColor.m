@@ -11,11 +11,13 @@
 @implementation UIView (ImageWihtColor)
 - (UIImage *)ImageFromColor:(UIColor *)color{
     
-    CGRect rect = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    CGRect rect
+      = self.layer.visibleRect;
+    
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextStrokeRectWithWidth(context, rect, 4);
+    CGContextSetStrokeColorWithColor(context, [color CGColor]);
+    CGContextStrokeRectWithWidth(context, rect,2);
     //    CGContextFillRect(context, rect);
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

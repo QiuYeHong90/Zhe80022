@@ -102,12 +102,30 @@
             self.arrowView.transform = CGAffineTransformIdentity;
         }];
     } else if (state == MJRefreshStateRefreshing) {
-        self.arrowView.hidden = YES;
-        [self.loadingView startAnimating];
+//        self.arrowView.hidden = YES;
+//        [self.loadingView startAnimating];
+        [self contineuAnimation];
     } else if (state == MJRefreshStateNoMoreData) {
         self.arrowView.hidden = YES;
         [self.loadingView stopAnimating];
     }
 }
+-(void)endRefreshing{
+    [super endRefreshing];
+     [self.arrowView.layer removeAllAnimations];
+}
+
+-(void)contineuAnimation{
+    [self.arrowView.layer removeAllAnimations];
+    ///核心动画 动画旋转 
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
+    rotationAnimation.duration = 0.8;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = CGFLOAT_MAX;
+    [self.arrowView.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+}
+
 
 @end

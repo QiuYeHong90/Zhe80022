@@ -14,24 +14,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="526" height="820"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-eS-Irv">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-hK-sAc" customClass="SDCycleScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="526" height="820"/>
-                        <color key="backgroundColor" red="0.87737396408839774" green="0.38889742534833593" blue="0.46428319730340101" alpha="1" colorSpace="calibratedRGB"/>
-                    </scrollView>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="r4n-eS-Irv" secondAttribute="bottom" id="982-kL-IKh"/>
-                <constraint firstItem="r4n-eS-Irv" firstAttribute="top" secondItem="1Nt-hV-4w2" secondAttribute="top" id="BuW-um-9Ui"/>
-                <constraint firstAttribute="trailing" secondItem="r4n-eS-Irv" secondAttribute="trailing" id="e0V-SO-PoD"/>
-                <constraint firstItem="r4n-eS-Irv" firstAttribute="leading" secondItem="1Nt-hV-4w2" secondAttribute="leading" id="kQL-Z9-bH4"/>
+                <constraint firstItem="7Tg-hK-sAc" firstAttribute="top" secondItem="1Nt-hV-4w2" secondAttribute="top" id="YQG-9E-jcB"/>
+                <constraint firstItem="7Tg-hK-sAc" firstAttribute="leading" secondItem="1Nt-hV-4w2" secondAttribute="leading" id="fKX-JF-SsI"/>
+                <constraint firstAttribute="trailing" secondItem="7Tg-hK-sAc" secondAttribute="trailing" id="ha6-5Q-6gU"/>
+                <constraint firstAttribute="bottom" secondItem="7Tg-hK-sAc" secondAttribute="bottom" id="iq1-Ha-XrA"/>
             </constraints>
             <size key="customSize" width="526" height="820"/>
             <connections>
-                <outlet property="scrollView" destination="r4n-eS-Irv" id="r4i-8d-F2K"/>
+                <outlet property="scrollView" destination="7Tg-hK-sAc" id="pbT-4z-2bS"/>
             </connections>
-            <point key="canvasLocation" x="314" y="153"/>
+            <point key="canvasLocation" x="298" y="95"/>
         </collectionViewCell>
     </objects>
 </document>
