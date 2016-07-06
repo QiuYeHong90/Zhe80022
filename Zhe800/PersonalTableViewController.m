@@ -1,19 +1,18 @@
+//
+//  PersonalTableViewController.m
+//  Zhe800
+//
+//  Created by Darius_mac on 16/7/5.
+//  Copyright © 2016年 ZhiYou. All rights reserved.
+//
 
-//
-//  PersonalViewController.m
-//  
-//
-//  Created by Darius_mac on 16/6/24.
-//
-//
+#import "PersonalTableViewController.h"
 
-#import "PersonalViewController.h"
-
-@interface PersonalViewController ()
+@interface PersonalTableViewController ()
 
 @end
 
-@implementation PersonalViewController
+@implementation PersonalTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

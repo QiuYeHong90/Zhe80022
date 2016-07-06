@@ -10,4 +10,8 @@
 
 @interface ClassViewController : UIViewController
 
+@property (nonatomic,strong) NSMutableDictionary * dataDict;
+@property (nonatomic,strong) UICollectionView * collectionView;
+
+@property (nonatomic,strong) NSDictionary * picDict;
 @end

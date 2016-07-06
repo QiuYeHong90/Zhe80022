@@ -24,12 +24,18 @@
 
 #import "BGView.h"
 #import "ClassViewController.h"
-@interface FirstViewController ()<YSHNavSearchViewDelegate,UIScrollViewAccessibilityDelegate,UICollectionViewDataSource,UICollectionViewDelegate,BGViewDelegate>
+#import "YSTopTitleScrollView.h"
+
+#import "WebViewController.h"
+#import "DetailShopViewController.h"
+@interface FirstViewController ()<selecttionCollectionViewCellDelegate,YSHNavSearchViewDelegate,UIScrollViewAccessibilityDelegate,UICollectionViewDataSource,UICollectionViewDelegate,BGViewDelegate,YSToopTitleScrollViewDelegate>
 {
     UISearchController * _searchController;
     BOOL _isPush;
     BOOL _isTap;
     NSInteger currentIndex;
+    
+    CGPoint _markPoint;
     
 }
 @property (nonatomic,strong) UIButton * rightButton;
@@ -41,7 +47,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.btnArray = [[NSMutableArray alloc]init];
+//    self.btnArray = [[NSMutableArray alloc]init];
     self.titleArray = @[@"推荐",@"男装",@"数码家电",@"文娱运动",@"鞋品",@"美食",@"居家",@"女装",@"内衣",@"美妆配饰",@"儿童",@"箱包",@"家纺家装",@"母婴",@"中老年"];
     self.tagDictionary = @{@"男装":@"wireless1004",
                            @"数码家电":@"wireless3296",
@@ -115,7 +121,7 @@
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     if ([scrollView isKindOfClass:[UICollectionView class]]) {
-        self.temp.hidden = YES;
+//        self.temp.hidden = YES;
         if (scrollView.contentOffset.x == 0) {
             self.indicatorView.hidden = NO;
             self.indicatorViewScroll.hidden = YES;
@@ -131,115 +137,83 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
-    
-//    int index = scrollView.contentOffset.x/self.view.width;
+
     if ([scrollView isKindOfClass:[UICollectionView class]]) {
         int index = scrollView.contentOffset.x/self.view.width;
-        if (_isTap==YES) {
-            
-        }else{
-            
-        }
         if (scrollView.contentOffset.x !=index * self.view.width) {
             
             if (scrollView.contentOffset.x >=index * self.view.width) {
-                if (index == 0) {
-                    [self.scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
-                }else{
-                   
+                
+                
+                UIButton *  oldBtn = self.btnArray [index];
+                UIButton * disitanceBtn = self.btnArray[index+1];
+                
+                CGFloat offSet = 0;
+                
+                if (self.scrollView.contentSize.width-oldBtn.x >= self.scrollView.width) {
+                    float scrollX  = ((scrollView.contentOffset.x-index * self.view.width)/self.view.width)*(fabs((oldBtn.x-disitanceBtn.x)));
                     
-                    UIButton *  oldBtn = self.btnArray [index];
-                     UIButton * disitanceBtn = self.btnArray[index+1];
-                    if (self.scrollView.contentSize.width- oldBtn.x > self.scrollView.width) {
-                        float scrollX  = ((scrollView.contentOffset.x-index * self.view.width)/self.view.width)*(fabs((oldBtn.x-disitanceBtn.x)));
+                    ////如果滑动的时候 滑到最边缘了,那么就划不动了 ,就让偏移量等于self.scrollView.contentSize.width - self.scrollView.width
+                    offSet = oldBtn.x+scrollX;
+                    
+                    if (offSet+self.scrollView.width>=self.scrollView.contentSize.width) {
                         
-                        
-                       
-                        
-                        [self.scrollView setContentOffset:CGPointMake(oldBtn.x+scrollX,0) animated:NO];
-                        if (_temp== nil) {
-                            
-                            _temp = [[UIView alloc]init];
-                            [self.titlesView addSubview:_temp];
-                            _temp.backgroundColor = [UIColor redColor];
-                            _temp.hidden = NO;
-                            _temp.width = self.selectedButton.titleLabel.width;
-                            _temp.height = 2;
-                            _temp.y = self.titlesView.height - 2;
-                            CGPoint center  = [self.selectedButton.superview convertPoint:self.selectedButton.center toView:self.titlesView];
-                            _temp.centerX = center.x;
-                        }
-                        self.temp.hidden = NO;
-                        self.indicatorView.hidden = YES;
-                        self.indicatorViewScroll.hidden = YES;
-                        CGFloat oldCenterX = [oldBtn.superview convertPoint:oldBtn.center toView:self.titlesView].x;
-                        _temp.centerX = oldCenterX;
-                        CGPoint disitanceCeter =[disitanceBtn.superview convertPoint:disitanceBtn.center toView:self.titlesView];
-                        
-                            float tempX = ((scrollView.contentOffset.x-index * self.view.width)/self.view.width)*(fabs((oldCenterX-disitanceCeter.x)));
-                        float tempW = ((scrollView.contentOffset.x-index * self.view.width)/self.view.width)*(fabs((oldBtn.width-disitanceBtn.width)));
-                        self.temp.hidden = NO;
-                       
-                        _temp.width = oldBtn.titleLabel.width + tempW;
-                        
-                       
-                        _temp.centerX = oldCenterX+ tempX;
-//                        _temp.y = 0;
-                        _temp.height =1000;
-                        NSLog(@"==%f=====%f",_temp.centerX,_temp.centerY);
-                        
-                        
+                        [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentSize.width - self.scrollView.width,0) animated:NO];
                     }else{
                         
+                        [self.scrollView setContentOffset:CGPointMake(oldBtn.x+scrollX,0) animated:NO];
                     }
-                  
+                   
+                    
+                    
+                    
+                }else{
+                    
+                    self.scrollView.contentOffset = CGPointMake(self.scrollView.contentSize.width  - self.scrollView.width, 0);
                 }
                 
+                
+                ///红色指示符的移动 坐标
+                self.indicatorView.hidden = index == 0?  NO:YES;
+                self.indicatorViewScroll.hidden = index == 0? YES:NO;
+                CGFloat oldCenterX = oldBtn.centerX;
+                
+                CGPoint disitanceCeter =disitanceBtn.center;
+                float tempX = ((scrollView.contentOffset.x-index * self.view.width)/self.view.width)*((-oldCenterX+disitanceCeter.x));
+                float tempW = ((scrollView.contentOffset.x-index * self.view.width)/self.view.width)*((-oldBtn.width+disitanceBtn.width));
+                
+                if (index == 0) {
+                    self.indicatorView.width = oldBtn.titleLabel.width + tempW;
+                    CGFloat oldPoint = [oldBtn.superview convertPoint:oldBtn.center toView:self.titlesView].x;
+                    CGFloat distancePoint  = [disitanceBtn.superview convertPoint:disitanceBtn.center toView:self.titlesView].x;
+                    float pointX = ((scrollView.contentOffset.x-index * self.view.width)/self.view.width)*((-oldPoint+distancePoint));
+                    self.indicatorView.centerX = oldPoint + pointX;
+                    
+                    
+                }else{
+                    self.indicatorViewScroll.width = oldBtn.titleLabel.width + tempW;
+                    self.indicatorViewScroll.centerX = oldCenterX+ tempX;
+                    
+                }
             }
             
             
+            
+            
         }
-    }else{
-        
     }
 }
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     
     int index = scrollView.contentOffset.x/self.view.width;
-    currentIndex = index;
     if ([scrollView isKindOfClass:[UICollectionView class]]) {
-         UIButton * btn = (UIButton*)self.btnArray[index];
         
-        if (scrollView.contentOffset.x == 0) {
-            
-            self.indicatorView.hidden = NO;
-            self.indicatorViewScroll.hidden = YES;
+        self.indicatorView.hidden = index==0? NO:YES;
+        self.indicatorViewScroll.hidden = index==0? YES:NO;
+        
+        [self.titlesView markClickWithIndex:index];
         }else{
-//            int idx = index -1;
-            self.indicatorViewScroll.hidden = NO;
-            self.indicatorView.hidden = YES;
-           
-        }
-//        self.selectedButton = btn;
-        
-            
-            [self titleClick:btn];
-            
-//            btn.selected = !btn.selected;
-//            self.selectedButton = btn;
-        
-        
-        if (index> 0 ) {
-            self.indicatorViewScroll.hidden = NO;
-            self.indicatorView.hidden = YES;
-            
-        }else{
-            self.indicatorViewScroll.hidden = YES;
-            self.indicatorView.hidden =NO;
-        }
-    }else{
         self.indicatorViewScroll.hidden = NO;
         self.indicatorView.hidden = YES;
     }
@@ -254,7 +228,7 @@
     if (indexPath.item == 0) {
         SelectionCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SelectionCollectionViewCell" forIndexPath:indexPath];
         cell.backgroundColor = [UIColor yellowColor];
-        
+        cell.selectionDelegate = self;
         return cell;
         
     }else {
@@ -266,95 +240,67 @@
         
     }
 }
+#pragma mark -- collectionViewDelegate
+-(void)toPDetailVCDelegate:(SHOPObjects*)obj withImageUrl:(NSString *)imageUrl withTitle:(NSString *)title{
+    NSLog(@"==%@",obj);
+    DetailShopViewController * wVC = [DetailShopViewController new
+                               ];
+    wVC.title = title;
+    wVC.urlStr = obj.wapUrl;
+    [self.navigationController pushViewController:wVC animated:YES];
+}
+///scrollView
+-(void)toScrollDataVCDelegate:(YSBase  *)obj withImageUrl:(NSString *)imageUrl withTitle:(NSString *)title;
+{
+    NSLog(@"++%@+++%@+++%@",obj,imageUrl,title);
+    WebViewController * wVC = [WebViewController new
+                               ];
+    wVC.title = title;
+    wVC.urlStr = obj.wapUrl;
+    [self.navigationController pushViewController:wVC animated:YES];
+}
 
-#pragma mark -- 顶部滚动视图的布局 
+/// SCModule
+-(void)toSCModuleDataVCDelegate:(SCModule  *)obj withImageUrl:(NSString *)imageUrl withTitle:(NSString *)title{
+    WebViewController * wVC = [WebViewController new
+                               ];
+    wVC.title = title;
+    wVC.urlStr = obj.value;
+    [self.navigationController pushViewController:wVC animated:YES];
+}
+#pragma mark -- 顶部滚动视图的布局
 ///布局顶部视图
 -(void)setupTitlesView {
     //标签栏
-    UIView *titlesView = [[UIView alloc] init];
+    YSTopTitleScrollView    *titlesView = [[YSTopTitleScrollView alloc] initWithFrame:CGRectMake(0,64, CGRectGetWidth([UIScreen mainScreen].bounds), 36) andArray:self.titleArray];
     titlesView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1];
-    titlesView.frame = CGRectMake(0,64, CGRectGetWidth([UIScreen mainScreen].bounds), 36);
     [self.view addSubview:titlesView];
+    titlesView.delegate = self;
     self.titlesView = titlesView;
-    
-    //底部红色指示器
-    UIView *indicatorView = [[UIView alloc] init];
-    indicatorView.backgroundColor = [UIColor redColor];
-    indicatorView.height = 2;
-    indicatorView.tag = -1;
-    indicatorView.y = titlesView.height - indicatorView.height;
-    self.indicatorView = indicatorView;
+
+    self.indicatorView = titlesView.indicatorView;
     ///在scrollview 上的红色指示条
-    self.indicatorViewScroll = [[UIView alloc] init];
-    self.indicatorViewScroll.backgroundColor = [UIColor redColor];
-    self.indicatorViewScroll.height = 2;
-    self.indicatorViewScroll.tag = -2;
-    self.indicatorViewScroll.y = titlesView.height - self.indicatorViewScroll.height;
-    
-    //创建scrollview
+     self.indicatorViewScroll = titlesView.indicatorViewScroll;
+
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(55, 0, CGRectGetWidth([UIScreen mainScreen].bounds)-50-55,36)];
-//    self.scrollView.backgroundColor = [UIColor blackColor];
-    [self.titlesView addSubview:_scrollView];
-   
-    //内部子标签
-    NSInteger count = self.titleArray.count;
-    CGFloat width = 23;
-    CGFloat OldMaxX= 0;
-    CGFloat height = titlesView.height;
-    for (int i = 0; i < count; i++) {
-        UIButton *button = [[UIButton alloc] init];
-        button.height = height;
-        button.width = width ;
-       button.tag = i;
+    self.scrollView = titlesView.scrollView;
+    self.btnArray = titlesView.btnArray;
+    self.rightButton = titlesView.rightBtn;
 
-        [button setTitle:self.titleArray[i] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
-        button.titleLabel.font = [UIFont systemFontOfSize:14];
-        [button addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
-        if (i==0) {
-            button.width = 55 ;
-            button.x = OldMaxX;
-             [titlesView addSubview:button];
-        }else{
-            button.width = width + CGRectGetWidth([button.titleLabel.text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil]);
-            [self.scrollView addSubview:button];
-            button.x = OldMaxX;
-            OldMaxX = button.x + button.width;
-        }
-        
-//        button.backgroundColor = [UIColor blackColor ];
-        
-
-        
-        //默认点击了第一个按钮
-        if (i == 0) {
-            button.enabled = NO;
-            self.selectedButton = button;
-            //让按钮内部的Label根据文字来计算内容
-            [button.titleLabel sizeToFit];
-            self.indicatorView.width = button.titleLabel.width;
-            //            self.indicatorView.width = [titles[i] sizeWithAttributes:@{NSFontAttributeName : button.titleLabel.font}].width;
-            self.indicatorView.centerX = button.centerX;
-        }
-        [self.btnArray addObject:button];
-    }
-    self.scrollView.contentSize = CGSizeMake(OldMaxX, 36);
-    self.scrollView.showsHorizontalScrollIndicator = NO;
-    [titlesView addSubview:indicatorView];
-    self.indicatorViewScroll.hidden = YES;
-    [self.scrollView addSubview:self.indicatorViewScroll];
-    
-    ///左侧的button
-    UIButton * RightBtn = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.scrollView.frame), 0,40, 36)];
-    [RightBtn setImage:[UIImage imageNamed:@"muying_title_selected"] forState:UIControlStateNormal];
-    [RightBtn setImage:[UIImage imageNamed:@"muying_title_unselected"] forState:UIControlStateSelected];
-    [RightBtn addTarget:self  action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.titlesView addSubview:RightBtn];
-    self.rightButton = RightBtn;
 }
-///TODO:顶部视图的左侧button点击事件
+
+#pragma mark ---顶部标签代理
+-(void)topView:(YSTopTitleScrollView *)topView clickBtn:(UIButton *)btn{
+    NSLog(@"标签点击是事件");
+    CGPoint offset = self.collectionView.contentOffset;
+    offset.x = btn.tag* self.collectionView.width;
+    [self.collectionView setContentOffset:offset animated:NO];
+}
+-(void)topView:(YSTopTitleScrollView *)topView clickRightBtn:(UIButton *)rithtBtn{
+    NSLog(@"右侧点击事件");
+    [self btnClick:rithtBtn];
+}
+///TODO:顶部视图的右侧button点击事件
 -(void)btnClick:(UIButton*)btn
 {
     btn.selected = !btn.selected;
@@ -363,7 +309,7 @@
         _bgView = [[BGView alloc]initWithFrame:CGRectMake(0,CGRectGetMaxY(self.titlesView.frame), self.view.width,self.view.height -self.titlesView.height+self.titlesView.y ) andArray:self.titleArray];
         [self.view addSubview:_bgView];
         _bgView.delegate = self;
-        _bgView.index = currentIndex;
+        _bgView.index = self.titlesView.selectedButton.tag;
         [UIView animateWithDuration:0.25 animations:^{
              _bgView.titleView.y = 0;
         }];
@@ -377,24 +323,38 @@
         }];
        
     }
-}
-
--(void)scrollToDistancePosionWithTag:(NSInteger)tag{
-    UIButton * button = self.btnArray[tag];
-    UIButton * lastBtn  = self.btnArray.lastObject;
-    CGFloat postX = 0;
-    if (CGRectGetMaxX(lastBtn.frame) - button.x > self.scrollView.width) {
-        postX = button.x;
+    
+    self.scrollView.hidden = !self.scrollView.hidden;
+    if (self.scrollView.hidden == YES) {
+        UIButton * button =  self.btnArray[0];
+        button.hidden = YES;
+        self.indicatorView.hidden = YES;
+        
+        if (self.titlesView.choiceLab==nil) {
+            self.titlesView.choiceLab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.titlesView.width/2, self.titlesView.height)];
+            self.titlesView.choiceLab.text =@"  选择分类";
+            [self.titlesView addSubview:self.titlesView.choiceLab];
+        }
+        self.titlesView.choiceLab.hidden = NO;
     }else{
-        postX = CGRectGetMaxX(lastBtn.frame) - self.scrollView.width;
+        UIButton * button =  self.btnArray[0];
+        button.hidden = NO;
+        if (self.titlesView.selectedButton.tag == 0) {
+            self.indicatorView.hidden = NO;
+
+        }
+        
+        self.titlesView.choiceLab.hidden = YES;
     }
-    [self.scrollView setContentOffset:CGPointMake(postX,0) animated:YES];
+
 }
 
+#pragma  mark -- 分类弹框代理事件
 -(void)bgView:(BGView *)bgView CategoryBtnClick:(UIButton *)btn{
      NSLog(@"btn.tag==%ld -- %@",btn.tag,self.titleArray[btn.tag]);
-     [self scrollToDistancePosionWithTag:btn.tag];
-    [self titleClick:self.btnArray[btn.tag]];
+//     [self scrollToDistancePosionWithTag:btn.tag];
+//    [self titleClick:self.btnArray[btn.tag]];
+    [self.titlesView markClickWithIndex:btn.tag];
     
     [self btnClick:self.rightButton];
     
@@ -409,38 +369,6 @@
     [self btnClick:self.rightButton];
 }
 
--(void)titleClick:(UIButton*)button
-{
-    currentIndex = button.tag;
-   
-    //修改按钮状态
-    _isTap = YES;
-    self.selectedButton.enabled = YES;
-    button.enabled = NO;
-    self.selectedButton = button;
-    if (button.tag > 0 ) {
-        
-        self.indicatorViewScroll.hidden = NO;
-        self.indicatorView.hidden = YES;
-        self.indicatorViewScroll.width = self.selectedButton.titleLabel.width;
-        self.indicatorViewScroll.centerX = self.selectedButton.centerX;
-        
-    }else{
-        self.indicatorViewScroll.hidden = YES;
-        self.indicatorView.hidden = NO;
-        self.indicatorView.width = self.selectedButton.titleLabel.width;
-        self.indicatorView.centerX = self.selectedButton.centerX;
-    }
-  
-    //滚动,切换子控制器
-    CGPoint offset = self.collectionView.contentOffset;
-    offset.x = button.tag* self.collectionView.width;
-    [self.collectionView setContentOffset:offset animated:YES];
-    //让标签执行动
-    
-    
-    
-}
 
 
 
@@ -473,6 +401,7 @@
 }
 -(void)btnClickSearchView:(YSHNavSearchView *)searchView
 {
+   
     SearchViewController *searchVC = [[SearchViewController alloc]init];
     self.hidesBottomBarWhenPushed = YES;
     self.tabBarController.tabBar.hidden = YES;
@@ -480,6 +409,11 @@
     _isPush = YES;
 }
 
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+  
+}
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     if (_isPush == YES) {

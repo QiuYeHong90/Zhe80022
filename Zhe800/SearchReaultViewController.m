@@ -7,7 +7,8 @@
 //
 
 #import "SearchReaultViewController.h"
-
+#import "EMSearchBar.h"
+#import "UIView+YMExtension.h"
 @interface SearchReaultViewController ()
 
 @end
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {

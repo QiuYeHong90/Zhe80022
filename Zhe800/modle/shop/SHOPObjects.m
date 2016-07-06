@@ -215,7 +215,11 @@ NSString *const kSHOPObjectsDealTypes = @"deal_types";
     [mutableDict setValue:self.beginTime forKey:kSHOPObjectsBeginTime];
     [mutableDict setValue:[self.couponInfos dictionaryRepresentation] forKey:kSHOPObjectsCouponInfos];
     [mutableDict setValue:[NSNumber numberWithDouble:self.dealType] forKey:kSHOPObjectsDealType];
-    [mutableDict setValue:self.dealTypes forKey:kSHOPObjectsDealTypes];
+    if (self.dealTypes) {
+        NSLog(@"==%@",self.dealTypes );
+        [mutableDict setValue:self.dealTypes forKey:kSHOPObjectsDealTypes];
+    }
+    
 
     return [NSDictionary dictionaryWithDictionary:mutableDict];
 }

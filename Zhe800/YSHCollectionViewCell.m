@@ -30,7 +30,7 @@
               NSString * str = [obj.imageBigIosUrl componentsSeparatedByString:@".webp"][0];
             [mutPicUrl addObject:str];
         }];
-    
+        self.picArray = mutPicUrl.copy;
         
         self.scrollView.imageURLStringsGroup = mutPicUrl;
         self.scrollView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
@@ -50,7 +50,7 @@
     NSLog(@"我被点击了==%ld",index);
     self.page = index;
     if (self.block) {
-        self.block(index);
+        self.block(index,self.picArray[index]);
     }
 }
 

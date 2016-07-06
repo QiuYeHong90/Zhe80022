@@ -41,8 +41,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-       //        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapView:)];
-//        [self addGestureRecognizer:tap];
+        
     }
     return self;
 }

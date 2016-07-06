@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class YSTopTitleScrollView;
 @interface FirstViewController : UIViewController
 
 
-@property (nonatomic,strong) UIView * titlesView;
+@property (nonatomic,strong) YSTopTitleScrollView * titlesView;
 
 @property (nonatomic,strong) UIView * indicatorView;
 @property (nonatomic,strong) UIView * indicatorViewScroll;
@@ -19,7 +19,7 @@
 @property (nonatomic,strong) UIScrollView * scrollView;
 @property (nonatomic,strong) NSArray * titleArray;
 
-@property (nonatomic,strong) UIView * temp;
+//@property (nonatomic,strong) UIView * temp;
 @property (nonatomic,strong) UIScrollView * contentView;
 
 @property (nonatomic,strong) UICollectionView *collectionView;

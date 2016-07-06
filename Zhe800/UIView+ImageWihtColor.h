@@ -10,4 +10,9 @@
 
 @interface UIView (ImageWihtColor)
 - (UIImage *)ImageFromColor:(UIColor *)color;
+- (void)addVisualEffectView
+;
+- (UIImage *)backgroundImageFromColor:(UIColor *)color;
+
+- (UIImage *)imageFromColor:(UIColor *)color withRect:(CGRect)rect;
 @end

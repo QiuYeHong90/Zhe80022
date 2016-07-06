@@ -14,9 +14,60 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-Tj-fSw">
+                    <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登陆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VF1-6G-bji">
+                            <rect key="frame" x="109" y="0.0" width="197" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="197" id="SlP-Xb-bci"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfk-DY-RBh">
+                            <rect key="frame" x="8" y="0.0" width="48" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="jlW-c4-ugT"/>
+                            </constraints>
+                            <state key="normal" title="返回"/>
+                            <connections>
+                                <action selector="buttonCLick:" destination="-1" eventType="touchUpInside" id="TrQ-iD-hK6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VF1-6G-bji" firstAttribute="centerX" secondItem="Gy3-Tj-fSw" secondAttribute="centerX" id="0DZ-cq-BXq"/>
+                        <constraint firstAttribute="bottom" secondItem="VF1-6G-bji" secondAttribute="bottom" id="72d-Cf-E72"/>
+                        <constraint firstAttribute="bottom" secondItem="Pfk-DY-RBh" secondAttribute="bottom" id="LXp-AF-3aZ"/>
+                        <constraint firstItem="VF1-6G-bji" firstAttribute="top" secondItem="Gy3-Tj-fSw" secondAttribute="top" id="PS3-b6-W3y"/>
+                        <constraint firstAttribute="height" constant="44" id="V9g-MG-DBR"/>
+                        <constraint firstItem="Pfk-DY-RBh" firstAttribute="leading" secondItem="Gy3-Tj-fSw" secondAttribute="leading" constant="8" id="h5a-j3-Qcq"/>
+                        <constraint firstItem="Pfk-DY-RBh" firstAttribute="top" secondItem="Gy3-Tj-fSw" secondAttribute="top" id="uck-OZ-wZs"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机/邮箱/用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UL-P6-VGN">
+                    <rect key="frame" x="75" y="108" width="265" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2C-bK-W25">
+                    <rect key="frame" x="75" y="168" width="265" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gy3-Tj-fSw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="4T1-Dy-MXf"/>
+                <constraint firstAttribute="trailing" secondItem="Gy3-Tj-fSw" secondAttribute="trailing" id="YAB-O5-IAS"/>
+                <constraint firstItem="Gy3-Tj-fSw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dbX-zh-u61"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-            <point key="canvasLocation" x="337" y="337"/>
+            <point key="canvasLocation" x="-100" y="277"/>
         </view>
     </objects>
 </document>

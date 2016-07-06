@@ -19,18 +19,38 @@
                     <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-b0-2wd">
                         <rect key="frame" x="354" y="0.0" width="352" height="317"/>
                     </imageView>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-wh-gvr">
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="317"/>
+                        <connections>
+                            <action selector="buttonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="AFm-nd-SZV"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sy5-VL-2DY">
+                        <rect key="frame" x="354" y="0.0" width="352" height="317"/>
+                        <connections>
+                            <action selector="buttonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="bLh-Rl-zpu"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
                 <constraint firstItem="Vyw-9l-3nc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1l7-Id-Ukn"/>
+                <constraint firstAttribute="bottom" secondItem="ROM-wh-gvr" secondAttribute="bottom" id="B3C-3W-pqy"/>
                 <constraint firstItem="gcm-b0-2wd" firstAttribute="leading" secondItem="Vyw-9l-3nc" secondAttribute="trailing" constant="2" id="FLZ-KU-Chn"/>
                 <constraint firstItem="gcm-b0-2wd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HBh-XQ-uCm"/>
                 <constraint firstItem="Vyw-9l-3nc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ltn-Or-m9p"/>
+                <constraint firstItem="sy5-VL-2DY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OfS-tN-Ynt"/>
+                <constraint firstAttribute="trailing" secondItem="sy5-VL-2DY" secondAttribute="trailing" id="QRH-XM-TZj"/>
+                <constraint firstItem="ROM-wh-gvr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WH2-z6-hnf"/>
                 <constraint firstItem="gcm-b0-2wd" firstAttribute="width" secondItem="Vyw-9l-3nc" secondAttribute="width" id="awZ-Zb-xWA"/>
+                <constraint firstAttribute="bottom" secondItem="sy5-VL-2DY" secondAttribute="bottom" id="bQz-TO-HWv"/>
                 <constraint firstAttribute="bottom" secondItem="Vyw-9l-3nc" secondAttribute="bottom" id="biR-2P-E0X"/>
                 <constraint firstAttribute="trailing" secondItem="gcm-b0-2wd" secondAttribute="trailing" id="dcD-an-Pok"/>
                 <constraint firstAttribute="bottom" secondItem="gcm-b0-2wd" secondAttribute="bottom" id="iCj-h2-T70"/>
+                <constraint firstItem="sy5-VL-2DY" firstAttribute="leading" secondItem="ROM-wh-gvr" secondAttribute="trailing" constant="2" id="lR7-0H-dBV"/>
+                <constraint firstItem="gcm-b0-2wd" firstAttribute="leading" secondItem="ROM-wh-gvr" secondAttribute="trailing" constant="2" id="u1m-jE-QP2"/>
+                <constraint firstItem="ROM-wh-gvr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zUW-eg-Lzr"/>
             </constraints>
             <size key="customSize" width="706" height="317"/>
             <point key="canvasLocation" x="403" y="302.5"/>

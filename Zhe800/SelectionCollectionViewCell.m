@@ -313,9 +313,11 @@
         
         YSHCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"YSHCollectionViewCell" forIndexPath:indexPath];
         __weak typeof(self) weakSelf = self;
-        cell.block = ^(NSInteger index){
+        cell.block = ^(NSInteger index,NSString *picUrl){
             
             NSLog(@"传代理协议=====%ld===%@",index,weakSelf.scrollDataArray[index]);
+            YSBase * base = (YSBase*)weakSelf.scrollDataArray[index];
+            [weakSelf.selectionDelegate toScrollDataVCDelegate: weakSelf.scrollDataArray[index]withImageUrl:picUrl withTitle:base.title];
         };
         cell.dataArray = self.scrollDataArray;
         
@@ -336,7 +338,15 @@
         if (indexPath.row==2) {
             
         SubCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"SubCollectionViewCell" forIndexPath:indexPath];
-        
+            cell.index = indexPath.row;
+            typeof(self) weakSelf = self;
+            cell.btnClick = ^(NSInteger idx,NSInteger imgTag){
+              //TODO:这里代理
+                SCBAS * base = self.dataArray[idx];
+                SCModule * obj= nil;
+                obj = base.module[imgTag];
+                [weakSelf.selectionDelegate toSCModuleDataVCDelegate:obj withImageUrl:obj.value withTitle:obj.title];
+            };
             for (int i=0; i<base.module.count; i++) {
                 NSString *str = [[base.module[i] pic] componentsSeparatedByString:@".webp"][0];
                 NSLog(@"===++++%@",str);
@@ -350,7 +360,16 @@
         }
         if (indexPath.row>=3&&indexPath.row<=5) {
             TowImageViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"TowImageViewCell" forIndexPath:indexPath];
+            //TODO: TowImageViewCell这里代理
+            cell.index = indexPath.row;
+            typeof(self) weakSelf = self;
+            cell.btnClick = ^(NSInteger idx,NSInteger imgTag){
             
+                SCBAS * base = self.dataArray[idx];
+                SCModule * obj= nil;
+                obj = base.module[imgTag];
+                [weakSelf.selectionDelegate toSCModuleDataVCDelegate:obj withImageUrl:obj.value withTitle:obj.title];
+            };
             for (int i=0; i<base.module.count; i++) {
                 NSString *str = [[base.module[i] pic] componentsSeparatedByString:@".webp"][0];
                 NSLog(@"===++++%@",str);
@@ -381,25 +400,41 @@
     }
 
 }
-
+/////点击事件区
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
         case 0:
         {
            YSHCollectionViewCell *yshCell  =(YSHCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
-            NSLog(@"===%ld",yshCell.page);
+            NSLog(@"yshCell.page===%ld",yshCell.page);
+//            self.selectionDelegate toPDetailVCDelegate:<#(id)#> withImageUrl:<#(NSString *)#> withTitle:<#(NSString *)#>
+            
+            
 
         }
             break;
         case 1:
         {
+            
              SCBAS * base = self.dataArray[indexPath.row];
-            NSLog(@"==%@",base.module[0]);
+            SCModule * obj= nil;
+           
+                NSLog(@"==%@",base.module[0]);
+                obj =base.module[0];
+                if ([obj.value isEqualToString:@""]) {
+                    return;
+                }
+            
+            
+            
+            
+            [self.selectionDelegate toSCModuleDataVCDelegate:obj withImageUrl:obj.value withTitle:obj.title];
         }
             break;
         case 2:
         {
             SHOPObjects * object = self.shopListArray[indexPath.row];
+            [self.selectionDelegate toPDetailVCDelegate:object withImageUrl:object.detailUrl withTitle:object.title];
             NSLog(@"==%@",object);
         }
             break;

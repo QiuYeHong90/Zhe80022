@@ -12,12 +12,12 @@
 #import <SDCycleScrollView.h>
 
 
-typedef void(^BlockClick)(NSInteger);
+typedef void(^BlockClick)(NSInteger,NSString*);
 
 @interface YSHCollectionViewCell : UICollectionViewCell<SDCycleScrollViewDelegate>
 
 
-
+@property (nonatomic,strong) NSArray * picArray;
 @property (weak, nonatomic) IBOutlet SDCycleScrollView *scrollView;
 @property (nonatomic,strong)NSArray * dataArray;
 

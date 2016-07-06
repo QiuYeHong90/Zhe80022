@@ -11,10 +11,12 @@
 #import "FirstViewController.h"
 #import "ClassViewController.h"
 #import "ShoppingCartViewController.h"
-#import "PersonalViewController.h"
+#import "PersonalTableViewController.h"
 #import "UIView+YMExtension.h"
 #import "YSHNavgationController.h"
-@interface MainViewController ()
+
+#import "LogViewController.h"
+@interface MainViewController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -27,7 +29,7 @@
    
      [self setUpChildViewControllers];
     
-    
+    self.delegate = self;
     
 
     
@@ -62,15 +64,22 @@
         @"imageName":@"home_tab_shopcart_btn",
         @"imageNameSelected":@"home_tab_shopcart_selected_btn",
         @"type":@(NormalType)},
-      @{@"className":NSStringFromClass([PersonalViewController class]),
+      @{@"className":NSStringFromClass([PersonalTableViewController class]),
         @"title":@"个人中心",
         @"imageName":@"home_tab_personal_btn",
         @"imageNameSelected":@"home_tab_personal_selected_btn",
         @"type":@(PersonalType)}];
     
+    
+    
+    
+    NSInteger idx = 0;
     for (NSDictionary * dic in classArray) {
         NSString * className = dic[@"className"];
-        UIViewController * vc = [[NSClassFromString(className) alloc]init];
+        UIViewController * vc = nil;
+            vc = [[NSClassFromString(className) alloc]init];
+        
+        
         vc.view.backgroundColor = [UIColor yellowColor];
         YSHNavgationController * nav = [[YSHNavgationController alloc]initWithRootViewController:vc type:[dic[@"type"] integerValue]];
         [self addChildViewController:nav];
@@ -79,7 +88,34 @@
         UIImage * image = [UIImage imageNamed:dic[@"imageNameSelected"]];
         UIImage * newImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         [vc.tabBarItem setSelectedImage:newImage];
+        idx ++;
         
+    }
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    
+    
+    
+  UINavigationController * nav  = (UINavigationController*) viewController;
+    
+    if ([nav.viewControllers[0] isKindOfClass:[ShoppingCartViewController class]]) {
+        
+        NSString * str = [[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
+        if (str) {
+            return YES;
+        }else{
+            
+            LogViewController * log = [[LogViewController alloc]init];
+            [self presentViewController:log animated:YES completion:^{
+                
+            }];
+            return NO;
+        }
+       
+    }else{
+        return YES;
     }
 }
 /**

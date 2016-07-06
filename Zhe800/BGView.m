@@ -25,7 +25,8 @@
     if (self) {
         self.clipsToBounds = YES;
         UIView * bgView = [[UIView alloc]initWithFrame:self.bounds];
-        bgView.backgroundColor = [UIColor getColorWithString:@"99,99,99,0.9"];
+        bgView.backgroundColor = [UIColor blackColor];
+        bgView.alpha = 0.5;
         self.bgView = bgView;
         [self addSubview:bgView];
         
@@ -44,12 +45,32 @@
         [self addSubview:titleView];
         
         self.backgroundColor = [UIColor clearColor];
+        [self addVisualEffectView];
         
         
     }
     return self;
 }
 
+- (void)addVisualEffectView
+{
+    
+    //    [view setBackgroundColor:[UIColor whiteColor]];
+    //    [view.layer setShadowOffset:CGSizeMake(-2.0, -2.0)];
+    //    [view.layer setShadowPath:[[UIBezierPath bezierPathWithRect:CGRectMake(0.0, 0.0, view.bounds.size.width + 4.0, view.bounds.size.height + 4.0)] CGPath]];
+    //    [view.layer setShadowColor:[[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.5] CGColor]];
+    //    [view.layer setShadowOpacity:0.5];
+    
+    
+    UIVisualEffect *blurEffect;
+    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    UIVisualEffectView *visualEffectView;
+    visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    
+    [visualEffectView setFrame:self.titleView.bounds];
+    [self.titleView addSubview:visualEffectView];
+    [self.titleView insertSubview:visualEffectView atIndex:0];
+}
 -(void)setIndex:(NSInteger)index{
     _index = index;
     self.titleView.index = index;

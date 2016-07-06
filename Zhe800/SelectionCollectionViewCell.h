@@ -8,13 +8,18 @@
 
 #import <UIKit/UIKit.h>
 //#import "Carousel.h"
+@class SHOPObjects,YSBase,SCModule;
 @protocol selecttionCollectionViewCellDelegate <NSObject>
+///商品详情
+- (void)toPDetailVCDelegate:(SHOPObjects *)obj withImageUrl:(NSString *)imageUrl withTitle:(NSString *)title;
 
-- (void)toPDetailVCDelegate:(NSString *)pageUrl withImageUrl:(NSString *)imageUrl withTitle:(NSString *)title;
+///scrollView
+-(void)toScrollDataVCDelegate:(YSBase  *)obj withImageUrl:(NSString *)imageUrl withTitle:(NSString *)title;
+
+
+/// SCModule
+-(void)toSCModuleDataVCDelegate:(SCModule  *)obj withImageUrl:(NSString *)imageUrl withTitle:(NSString *)title;
 - (void)toCarsouselNextVC:(NSString *)ids withUrl:(NSString *)url withNavTitle:(NSString *)title;
-
-
-
 @end
 
 
@@ -27,6 +32,7 @@
 @property (nonatomic, retain) NSMutableArray *CellModelArray;
 @property (nonatomic, retain) NSMutableArray *IdArray;
 //@property (nonatomic, strong) Carousel *carousel;
+
 
 
 

@@ -93,13 +93,13 @@
         btn.y = height + 8;
         btn.layer.cornerRadius = 5;
         btn.clipsToBounds = YES;
-//        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        btn.backgroundColor = [UIColor whiteColor];
         [btn addTarget:self  action:@selector(buttoClick:) forControlEvents:UIControlEventTouchUpInside];
-//        [btn setTitle:@"更多分类" forState:UIControlStateNormal];
+
         btn.zy_label.text = @"更多分类";
         btn.tag = 100;
         btn.zy_label.font = [UIFont systemFontOfSize:15];
+        btn.backgroundColor = [UIColor whiteColor];
+        btn.alpha = 0.5;
         
         
         
@@ -108,16 +108,8 @@
         btn.zy_label.textAlignment = NSTextAlignmentRight;
         
         
-        
-        
-        
-        
-        
-        
-//        /Users/mac/Desktop/Zhe800/Zhe800/Resource/common_webbar_forward_gray_btn@2x.png
-        
         [self addSubview:btn];
-        self.backgroundColor = [UIColor getColorWithString:@"244,242,243,1"];
+        self.backgroundColor = [UIColor clearColor];
         height = btn.y + btn.height + 13;
         
         
@@ -138,6 +130,7 @@
     
 }
 
+
 -(void)buttoClick:(ZYButton*)btn {
     
     NSLog(@"更多分类");
@@ -150,10 +143,6 @@
 -(void)btClick:(UIButton *)btn{
     NSLog(@"===%ld",btn.tag);
     self.index = btn.tag;
-//    self.selectedBtn.selected = NO;
-//    btn.selected = YES;
-//    self.selectedBtn = nil;
-//    self.selectedBtn = btn;
     if (self.categoryBtnClick) {
         self.categoryBtnClick(btn);
     }

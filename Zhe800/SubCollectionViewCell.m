@@ -14,7 +14,17 @@
 @implementation SubCollectionViewCell
 - (void)awakeFromNib {
    
-
+    
 
 }
+
+- (IBAction)buttonCick:(UIButton *)sender {
+    
+    
+    if (self.btnClick) {
+        self.btnClick(self.index,sender.tag - 100);
+    }
+}
+
+
 @end

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class GropScrollView;
 @interface GroupViewController : UIViewController
-
+@property (nonatomic,strong) NSArray * titleArray;
+@property (nonatomic,strong) UICollectionView * collectionView;
+@property (nonatomic,strong) GropScrollView * gropScro;
 @end

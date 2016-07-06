@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^ButtonClick)(NSInteger idx, NSInteger imgTag);
 @interface TowImageViewCell : UICollectionViewCell
-
+@property (nonatomic,assign) NSInteger index;
+@property (nonatomic,copy) ButtonClick btnClick;
 @end

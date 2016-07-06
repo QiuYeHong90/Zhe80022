@@ -63,7 +63,7 @@
 @property (nonatomic, strong) NSString *beginTime;
 @property (nonatomic, strong) SHOPCouponInfos *couponInfos;
 @property (nonatomic, assign) double dealType;
-@property (nonatomic, assign) id dealTypes;
+@property (nonatomic, strong) id dealTypes;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;

@@ -7,8 +7,12 @@
 //
 
 #import "SearchViewController.h"
+#import "EMSearchBar.h"
+#import "UIView+YMExtension.h"
+#import "SearchReaultViewController.h"
 
-@interface SearchViewController ()
+#import "ZYSearchBar.h"
+@interface SearchViewController ()<UISearchDisplayDelegate,UISearchBarDelegate>
 
 @end
 
@@ -16,10 +20,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    ZYSearchBar * searchBar = [[ZYSearchBar alloc]initWithFrame:CGRectMake(0, 20,self.view.width,44)];
+    [self.view addSubview:searchBar];
+    typeof(self) weakSelf = self;
+    searchBar.back = ^(){
+        [weakSelf.navigationController popViewControllerAnimated:YES];
+    };
     
     
     
+    
+    
+    
+    
+    
+    
+    
+}
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
+    return YES;
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+    [super viewWillAppear:animated];
+    
+    
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
+    [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

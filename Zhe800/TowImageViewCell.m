@@ -14,4 +14,9 @@
     // Initialization code
 }
 
+- (IBAction)buttonClick:(UIButton *)sender {
+    if (self.btnClick) {
+        self.btnClick(self.index,sender.tag - 100);
+    }
+}
 @end

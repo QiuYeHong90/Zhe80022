@@ -94,7 +94,7 @@
             break;
         case PersonalType:
         {
-            self.frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 133);
+//            self.frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 133);
             
         }
             break;

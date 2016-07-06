@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^ButtonClick)(NSInteger idx, NSInteger imgTag);
+
+
 @interface SubCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic,strong)NSMutableArray * dataArray;
+@property (nonatomic,assign) NSInteger index;
+
+@property (nonatomic,copy) ButtonClick btnClick;
 @end

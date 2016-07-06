@@ -37,3 +37,9 @@
 #import "STOREBase.h"
 
 
+////第二个界面
+#import "CLASSMeta.h"
+#import "CLASSBrandImageUrl.h"
+#import "CLASSObjects.h"
+#import "CLASSBase.h"
+
